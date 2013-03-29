@@ -1,28 +1,24 @@
+body { max-width: 800px; }
+
 a
 {
 	color: inherit;
 	text-decoration: none;
 }
-#header, #main
-{
-	clear: both;
-}
+
+#header, #main { clear: both; }
 
 #header
 {
-	background-color: black;
-	color: white;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+	color: white;
 }
 
 #banner
 {
+	background-color: black;
 	padding: 2ex 2em;
 	text-align: left;
-}
-
-#menu
-{
 }
 
 .menu_entry
@@ -38,8 +34,41 @@ a
 	cursor: pointer;
 }
 
-#main
+#main h1, h2, h3 { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
+
+#main h1 { font-size: 1.75em; }
+#main h2 { font-size: 1.5em; }
+#main h3 { font-size: 1.25em; }
+
+#main 
+{ 
+	font-family: "Trebuchet MS", Helvetica, sans-serif; 
+	background-color: #F8F8F8;
+}
+
+.resume_entry { padding: 1ex 1em; }
+.resume_entry:hover
 {
-	font-family: "Trebuchet MS", Helvetica, sans-serif;
+	background-color: #D8D8D8;
+}
+
+.resume_entry_header { font-style: italic; }
+
+.resume_entry_employer
+{
+	font-size: 1.5em;
+	float: left;
+}
+.resume_entry_span
+{
+	font-size: 1.5em;
+	float: right;
+}
+.resume_entry_title
+{
+	display: block;
+	clear: both;
+	font-size: 1.25em;
+	padding-top: 1ex;
 }
 
