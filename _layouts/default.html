@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>
+			João Cabrita's Homepage - {{ page.title }}
+		</title>
+		<link rel="stylesheet" href="stylesheets/kewne.css" />
+	</head>
+	<body>
+		<div id="header">
+			<div id="banner">
+				{% include header.html %}
+			</div>
+			<div id="menu">
+				{% include menu.html %}
+			</div>
+		</div>
+		<div id="main">
+			{{ content }}
+		</div>
+	</body>
+</html>
+

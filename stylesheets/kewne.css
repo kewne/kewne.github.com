@@ -1,0 +1,45 @@
+a
+{
+	color: inherit;
+	text-decoration: none;
+}
+#header, #main
+{
+	clear: both;
+}
+
+#header
+{
+	background-color: black;
+	color: white;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+
+#banner
+{
+	padding: 2ex 2em;
+	text-align: left;
+}
+
+#menu
+{
+}
+
+.menu_entry
+{
+	background-color: black;
+	float: left;
+	padding: 1ex 1em;
+}
+
+.menu_entry:hover
+{
+	background-color: gray;
+	cursor: pointer;
+}
+
+#main
+{
+	font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+
