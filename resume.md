@@ -1,8 +1,6 @@
 ---
 title: Resume
-layout: default
+layout: resume
 ---
-{% include resume/coreworks.html %}
-{% include resume/netpeople.html %}
-{% include resume/deloitte2.html %}
-{% include resume/deloitte.html %}
+This is an aggregator of all of my experience so far.
+Please use the menu above to navigate between different items.
