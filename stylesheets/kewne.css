@@ -23,13 +23,7 @@ div { margin: 0px; padding 0px; }
 	text-align: left;
 }
 
-#menu
-{
-	background-color: #F8F8F8;
-	color: white;
-}
-
-#menu a
+#header a
 {
       text-decoration: none;
       color: white; 
@@ -44,7 +38,7 @@ div { margin: 0px; padding 0px; }
 
 .menu_entry:hover
 {
-	background-color: gray;
+	background-color: #F8F8F8;
 	cursor: pointer;
 }
 
@@ -61,7 +55,7 @@ div { margin: 0px; padding 0px; }
 	background-color: #F8F8F8;
 }
 
-.resume_entry { padding: 1ex 1em; }
+.resume_entry { padding: .1ex .1em }
 .resume_entry:hover { background-color: #D8D8D8; }
 
 .resume_entry_header { font-style: italic; }
@@ -84,3 +78,4 @@ div { margin: 0px; padding 0px; }
 	padding-top: 1ex;
 }
 
+.resume_entry_description { font-size: 1em; }
