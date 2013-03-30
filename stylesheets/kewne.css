@@ -1,17 +1,19 @@
 body { max-width: 800px; }
 
-a
-{
-	color: inherit;
-	text-decoration: none;
-}
-
-#header, #main { clear: both; }
+div { margin: 0px; padding 0px; }
 
 #header
 {
+	background-color: #F8F8F8;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: white;
+}
+
+#footer 
+{
+	border-top: solid 1px black;
+	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
+	font-size: .75em;
 }
 
 #banner
@@ -21,11 +23,23 @@ a
 	text-align: left;
 }
 
+#menu
+{
+	background-color: #F8F8F8;
+	color: white;
+}
+
+#menu a
+{
+      text-decoration: none;
+      color: white; 
+}
+
 .menu_entry
 {
 	background-color: black;
-	float: left;
 	padding: 1ex 1em;
+	display: inline-block;
 }
 
 .menu_entry:hover
@@ -42,15 +56,13 @@ a
 
 #main 
 { 
+	padding: 1ex 1em;
 	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	background-color: #F8F8F8;
 }
 
 .resume_entry { padding: 1ex 1em; }
-.resume_entry:hover
-{
-	background-color: #D8D8D8;
-}
+.resume_entry:hover { background-color: #D8D8D8; }
 
 .resume_entry_header { font-style: italic; }
 
