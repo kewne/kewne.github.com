@@ -1,17 +1,18 @@
 body { max-width: 800px; }
 
-div { margin: 0px; padding 0px; }
+div { margin: 0px; padding: 0px; }
 
 #header
 {
-	background-color: #F8F8F8;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
 	color: white;
+	border-right: 1px solid black;
+	border-left: 1px solid black;
 }
 
 #footer 
 {
-	border-top: solid 1px black;
+	border-top: 1px solid black;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
 	font-size: .75em;
 }
@@ -38,7 +39,7 @@ div { margin: 0px; padding 0px; }
 
 .menu_entry:hover
 {
-	background-color: #F8F8F8;
+	background-color: #E8E8E8;
 	color: black;
 	cursor: pointer;
 }
@@ -50,16 +51,39 @@ div { margin: 0px; padding 0px; }
 #main h3 { font-size: 1.25em; }
 
 #main 
-{ 
+{
 	padding: 1ex 1em;
 	font-family: "Trebuchet MS", Helvetica, sans-serif; 
-	background-color: #F8F8F8;
+	border-left: 1px solid black;
+	border-right: 1px solid black;
 }
 
-.resume_entry { padding: .1ex .1em }
-.resume_entry:hover { background-color: #D8D8D8; color: black; }
+.resume_exp_div div
+{
+	padding: 1ex 1em;
+}
 
-.resume_entry_header { font-style: italic; }
+.resume_entry
+{ 
+	border-bottom: 1px dotted black;
+}
+
+.resume_entry:first-child
+{
+	border-top: 1px dotted black;
+}
+
+.resume_entry:hover { background-color: #f0f0f0; color: black; }
+
+.resume_entry_header
+{
+	margin-bottom: 0px;
+}
+
+.resume_entry_header, .resume_entry_body
+{ 
+	background-color: #f0f0f0;
+}
 
 .resume_entry_employer
 {
@@ -79,16 +103,27 @@ div { margin: 0px; padding 0px; }
 	padding-top: 1ex;
 }
 
-.resume_entry_description { font-size: 1em; }
+.resume_entry_body > p
+{
+	font-size: 1em;
+}
 
 .post_list_entry a { color: black; }
 
 #resume_content { padding-top: 2ex; padding-bottom: 1ex; }
-#resume_menu { border: 1px solid black; background-color: white; }
+
+#resume_menu
+{
+	border: 1px solid black;
+	background-color: #f4f4f4; 
+	/* chrome and maybe other webkit based browsers
+	seem to have a problem with em sized containers,
+	so this is required for it to look acceptable... */
+	overflow: hidden;
+}
 
 .resume_menu_entry
 {
-	background-color: white;
 	text-decoration: none;
 	color: black;
 	padding: 1ex 1em;
