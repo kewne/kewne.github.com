@@ -26,6 +26,10 @@ div { margin: 0px; padding: 0px; }
 
 #header a { text-decoration: none; }
 
+div.media_links * {
+    padding: .1ex .5em;
+}
+
 .menu_entry a { color: white; text-decoration: none; }
 .menu_entry a:hover { color: black; }
 
