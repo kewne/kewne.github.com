@@ -26,8 +26,14 @@ div { margin: 0px; padding: 0px; }
 
 #header a { text-decoration: none; }
 
-div.media_links * {
-    padding: .1ex .5em;
+div.media_links span {
+    padding: .4ex .5em;
+}
+
+#menu
+{
+    background-color: black; 
+    padding: 1px;
 }
 
 .menu_entry a { color: white; text-decoration: none; }
@@ -35,6 +41,7 @@ div.media_links * {
 
 .menu_entry
 {
+    text-align: center;
 	background-color: black;
 	color: white;
 	padding: 1ex 1em;
@@ -140,4 +147,3 @@ div.media_links * {
 	color: white;
 	cursor: pointer;
 }
-
