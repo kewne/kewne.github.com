@@ -1,9 +1,11 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
+<div itemscope itemtype="http://schema.org/BlogPosting">
+<h2 itemprop="name">{{ page.title }}</h2>
+<span class="footnote">written by <span itemprop="author">João Cabrita</span> on <span itemprop="datePublished">{{ page.date | date_to_long_string }}</span></span>
 
-{{ content }}
+<span itemprop="articleBody">{{ content }}</span>
 
 <hr />
 <div class="media_links">

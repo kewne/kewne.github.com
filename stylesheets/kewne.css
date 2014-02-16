@@ -159,3 +159,9 @@ div.media_links span {
 	color: white;
 	cursor: pointer;
 }
+
+.footnote
+{
+    font-size: small;
+    text-align: right;
+}
