@@ -1,0 +1,20 @@
+---
+layout: nil
+sitemap: false
+---
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+    <title>João Cabrita's Blog</title>
+    <link>{{ site.url }}</link>
+    <description>RSS feed for blog posts</description>
+    {% for post in site.posts %}
+    <item>
+        <title>{{ post.title }}</title>
+        <link>{{site.url}}{{post.url}}</link>
+        <pubDate>{{post.date}}</pubDate>
+        <description>{{post.excerpt}}</description>
+    </item>
+    {% endfor %}
+</channel>
+</rss>

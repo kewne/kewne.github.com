@@ -57,6 +57,10 @@ a { text-decoration: none; }
     padding: 0ex 1em;
     float: right;
 }
+#menu>#social_media_items>a {
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 #main h1, h2, h3 { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
@@ -179,6 +183,9 @@ img#linkedin-img {
 }
 
 img#gplus-img {
+    padding: 2px 0px 2px 0px;
+}
+img#rss-img {
     padding: 2px 0px 2px 0px;
 }
 
