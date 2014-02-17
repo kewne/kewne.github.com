@@ -23,7 +23,12 @@
         <link rel="stylesheet" href="/stylesheets/kewne.css" />
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
-        <div id="header"><div id="banner" itemscope itemtype="http://schema.org/WPHeader">{% include header.html %}</div>{% include menu.html %}</div>
+        <div id="header">
+            <div id="banner" itemscope itemtype="http://schema.org/WPHeader">
+                {% include header.html %}
+            </div>
+            {% include menu.html %}
+        </div>
         <div id="main" itemprop="mainContentOfPage">
             {{ content }}
         </div>
