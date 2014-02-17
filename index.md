@@ -1,6 +1,7 @@
 ---
 title: Home
 layout: default
+description: "I'm João Cabrita, a portuguese born software developer."
 ---
 Welcome to my homepage!
 I'm João Cabrita, a portuguese born software developer.

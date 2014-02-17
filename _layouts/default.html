@@ -4,6 +4,9 @@
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
         <meta charset="UTF-8">
         <meta name="msvalidate.01" content="92C8A7DB79E50BB9AE4239535E09EDB1" />
+        {% if page.description != null %}
+        <meta name="description" content="{{ page.description }}" />
+        {% endif %}
         <title>{{ page.title }} - João Cabrita</title>
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
