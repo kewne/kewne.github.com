@@ -1,7 +1,9 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <title>{{ page.title }}</title>
+        <meta charset="UTF-8">
+        <title>{{ page.title }} - João Cabrita</title>
         <script src="http://code.jquery.com/jquery-1.9.1.js"></script>
         <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js"></script>
         <script>
@@ -17,22 +19,7 @@
         <link rel="stylesheet" href="/stylesheets/kewne.css" />
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
-    <div id="fb-root"></div>
-    <script>(function(d, s, id) {
-      var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) return;
-          js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-              fjs.parentNode.insertBefore(js, fjs);
-              }(document, 'script', 'facebook-jssdk'));</script>
-        <div id="header">
-            <div id="banner" itemscope itemtype="http://schema.org/WPHeader">
-                {% include header.html %}
-            </div>
-            <div id="menu">
-                {% include menu.html %}
-            </div>
-        </div>
+        <div id="header"><div id="banner" itemscope itemtype="http://schema.org/WPHeader">{% include header.html %}</div>{% include menu.html %}</div>
         <div id="main" itemprop="mainContentOfPage">
             {{ content }}
         </div>

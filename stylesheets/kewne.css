@@ -2,6 +2,8 @@ body { max-width: 800px; }
 
 div { margin: 0px; padding: 0px; }
 
+a { text-decoration: none; }
+
 #header
 {
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
@@ -24,46 +26,36 @@ div { margin: 0px; padding: 0px; }
 	text-align: left;
 }
 
-#header a { text-decoration: none; }
-
-div.media_links span {
-    padding: .4ex .5em;
-}
-
 #menu
 {
-    background-color: black; 
-    padding: 1px;
-}
-
-#menu ul {
-    list-style-type: none;
+    display: block;
+    margin: 0px;
     padding: 0ex 0em;
 }
-#menu ul li {
-    padding: 0ex 0em;
-    display: inline;
+
+#menu>#menu_items {
+    background-color: black;
+    text-align: justify;
 }
 
-.menu_entry a
-{
-    text-decoration: none;
-}
-
-.menu_entry
-{
-    text-align: center;
+#menu>#menu_items>a {
 	background-color: black;
 	color: white;
-	padding: 1ex 1em;
-	display: inline-block;
+    padding: 1ex 1em;
+    display: inline-block;
 }
 
-.menu_entry:hover
+#menu>#menu_items>a:hover
 {
 	background-color: #E8E8E8;
 	color: black;
-	cursor: pointer;
+}
+
+#menu>#social_media_items {
+    background-color: white;
+    text-align: right;
+    padding: 0ex 1em;
+    float: right;
 }
 
 #main h1, h2, h3 { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
@@ -78,6 +70,7 @@ div.media_links span {
 	font-family: "Trebuchet MS", Helvetica, sans-serif; 
 	border-left: 1px solid black;
 	border-right: 1px solid black;
+    border-bottom: 1px solid black;
     color: black;
 }
 
@@ -164,3 +157,28 @@ div.media_links span {
 {
     font-size: small;
 }
+
+ul.social_links {
+    list-style-type: none;
+    padding: 1ex 1em;
+    margin: 0px;
+}
+ul.social_links li {
+    padding: 1ex 1em;
+    display: inline;
+}
+
+img#twitter-img {
+    padding: 5px 0px 6px 0px;
+}
+
+img#linkedin-img {
+    padding: 3px 2px 3px 4px;
+    background-color: white;
+}
+
+img#gplus-img {
+    padding: 2px 0px 2px 0px;
+}
+
+#share_this { display:inline; }
