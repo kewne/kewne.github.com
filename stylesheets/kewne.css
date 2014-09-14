@@ -76,6 +76,7 @@ a { text-decoration: none; }
 	border-right: 1px solid black;
     border-bottom: 1px solid black;
     color: black;
+    min-height: 150px;
 }
 
 .resume_exp_div div
@@ -190,3 +191,5 @@ img#rss-img {
 }
 
 #share_this { display:inline; }
+
+#ad { float: right; }
