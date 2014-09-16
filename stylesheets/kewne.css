@@ -192,4 +192,9 @@ img#rss-img {
 
 #share_this { display:inline; }
 
-#ad { float: right; }
+#ad {
+ position: fixed;
+ top: 0px;
+ left: 800px;
+ margin: 8px;
+ }
