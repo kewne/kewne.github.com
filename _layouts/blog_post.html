@@ -1,23 +1,24 @@
 ---
 layout: default
 ---
-<div itemscope itemtype="http://schema.org/BlogPosting">
-<h2 itemprop="name">{{ page.title }}</h2>
-<span class="footnote">written by <span itemprop="author">João Cabrita</span> on <span itemprop="datePublished">{{ page.date | date_to_long_string }}</span></span>
+<div class="uk-article" itemscope itemtype="http://schema.org/BlogPosting">
+    <h2 class="uk-article-title" itemprop="name">{{ page.title }}</h2>
+    <span class="footnote uk-article-meta">written by <span itemprop="author">João Cabrita</span> on <span itemprop="datePublished">{{ page.date | date_to_long_string }}</span></span>
 
-<span itemprop="articleBody">{{ content }}</span>
+    <span itemprop="articleBody">{{ content }}</span>
 
-<hr />
-<div>
-    <h4 id="share_this">Share this</h4>
-        <span>
-            <a id="twitter-share-button" href="https://twitter.com/intent/tweet?url={{site.url}}{{ page.url }}&via=joaorcabrita&text={{page.title}}"><!--
-             --><img src="/images/bird_blue_32.png" alt="Tweet"/><!--
-         --></a>
-            <a id="linkedin-share-button" href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source=João Cabrita"><!--
-             --><img src="/images/InBug-30px-R.png" alt="Share on LinkedIn"/><!--
-         --></a>
-        </span>
+    <hr />
+    <div>
+        <h4 id="share_this">Share this</h4>
+            <span>
+                <a id="twitter-share-button" href="https://twitter.com/intent/tweet?url={{site.url}}{{ page.url }}&via=joaorcabrita&text={{page.title}}"><!--
+                 --><img src="/images/bird_blue_32.png" alt="Tweet"/><!--
+             --></a>
+                <a id="linkedin-share-button" href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source=João Cabrita"><!--
+                 --><img src="/images/InBug-30px-R.png" alt="Share on LinkedIn"/><!--
+             --></a>
+            </span>
+    </div>
 </div>
 <hr />
 {% include comments.html %}

@@ -1,4 +1,8 @@
-body { max-width: 800px; }
+body { 
+  max-width: 50em;
+  margin-right: auto;
+  margin-left: auto;
+}
 
 div { margin: 0px; padding: 0px; }
 
@@ -14,7 +18,6 @@ a { text-decoration: none; }
 
 #footer 
 {
-	border-top: 1px solid black;
 	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
 	font-size: .75em;
 }
@@ -33,35 +36,6 @@ a { text-decoration: none; }
     padding: 0ex 0em;
 }
 
-#menu>#menu_items {
-    background-color: black;
-    text-align: justify;
-}
-
-#menu>#menu_items>a {
-	background-color: black;
-	color: white;
-    padding: 1ex 1em;
-    display: inline-block;
-}
-
-#menu>#menu_items>a:hover
-{
-	background-color: #E8E8E8;
-	color: black;
-}
-
-#menu>#social_media_items {
-    background-color: white;
-    text-align: right;
-    padding: 0ex 1em;
-    float: right;
-}
-#menu>#social_media_items>a {
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
 #main h1, h2, h3 { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
 
 #main h1 { font-size: 1.75em; }
@@ -76,7 +50,6 @@ a { text-decoration: none; }
 	border-right: 1px solid black;
     border-bottom: 1px solid black;
     color: black;
-    min-height: 150px;
 }
 
 .resume_exp_div div
@@ -84,26 +57,9 @@ a { text-decoration: none; }
 	padding: 1ex 1em;
 }
 
-.resume_entry
-{ 
-	border-bottom: 1px dotted black;
-}
-
-.resume_entry:first-child
-{
-	border-top: 1px dotted black;
-}
-
-.resume_entry:hover { background-color: #f0f0f0; color: black; }
-
 .resume_entry_header
 {
 	margin-bottom: 0px;
-}
-
-.resume_entry_header, .resume_entry_body
-{ 
-	background-color: #f0f0f0;
 }
 
 .resume_entry_employer
@@ -132,72 +88,9 @@ a { text-decoration: none; }
 
 .post_list_entry a { color: black; }
 
-#resume_content { padding-top: 2ex; padding-bottom: 1ex; }
-
-#resume_menu
-{
-	border: 1px solid black;
-	background-color: #f4f4f4; 
-	/* chrome and maybe other webkit based browsers
-	seem to have a problem with em sized containers,
-	so this is required for it to look acceptable... */
-	overflow: hidden;
-}
-
-.resume_menu_entry
-{
-	text-decoration: none;
-	color: black;
-	padding: 1ex 1em;
-	display: inline-block;
-}
-
-.resume_menu_entry:hover
-{
-	background-color: black;
-	color: white;
-	cursor: pointer;
-}
-
-.footnote
-{
+.footnote {
     font-size: small;
-}
-
-ul.social_links {
-    list-style-type: none;
-    padding: 1ex 1em;
-    margin: 0px;
-}
-ul.social_links li {
-    padding: 1ex 1em;
-    display: inline;
-}
-
-img#twitter-img {
-    padding: 5px 0px 6px 0px;
-}
-
-img#linkedin-img {
-    padding: 3px 2px 3px 4px;
-    background-color: white;
-}
-
-img#gplus-img {
-    padding: 2px 0px 2px 0px;
-}
-img#rss-img {
-    padding: 2px 0px 2px 0px;
 }
 
 #share_this { display:inline; }
 
-#ad {
- position: fixed;
- top: 0px;
- left: 800px;
- margin: 8px;
- }
-#footer-ad {
-    margin-top: 5px;
-}

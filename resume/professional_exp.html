@@ -2,23 +2,10 @@
 title: Professional Experience
 layout: resume
 ---
-<script>
-$(function() {
-	$( "#professional_exp_div" ).accordion({
-		collapsible: true,
-		header: ".resume_entry > .resume_entry_header",
-		heightStyle: "content"
-	});
-});
-
-</script>
-<p>
-Click on a section to expand details.
-</p>
-<div id="professional_exp_div" class="resume_exp_div">
-{% include professional_exp/betting.html %}
-{% include professional_exp/coreworks.html %}
-{% include professional_exp/netpeople.html %}
-{% include professional_exp/deloitte2.html %}
-{% include professional_exp/deloitte.html %}
-</div>
+<ul class="uk-list uk-list-striped">
+    <li>{% include professional_exp/betting.html %}</li>
+    <li>{% include professional_exp/coreworks.html %}</li>
+    <li>{% include professional_exp/netpeople.html %}</li>
+    <li>{% include professional_exp/deloitte2.html %}</li>
+    <li>{% include professional_exp/deloitte.html %}</li>
+</ul>

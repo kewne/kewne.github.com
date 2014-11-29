@@ -20,30 +20,29 @@
         ga('send', 'pageview');
 
         </script>
+        <link rel="stylesheet" href="//cdn.jsdelivr.net/webjars/uikit/2.12.0/css/uikit.min.css" />
         <link rel="stylesheet" href="/stylesheets/kewne.css" />
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
-        <div id="header">
-            <div id="banner" itemscope itemtype="http://schema.org/WPHeader">
-                {% include header.html %}
+        <div class="uk-grid">
+            <div class="uk-width-5-6">
+                <div id="header">
+                    <div id="banner" itemscope itemtype="http://schema.org/WPHeader">
+                        {% include header.html %}
+                    </div>
+                    {% include menu.html %}
+                </div>
+                <div id="main">
+                    {{ content }}
+                </div>
+                <div id="footer" itemscope itemtype="http://schema.org/WPFooter">
+                    <p>Who dares, wins.<p>
+                    <p>João Cabrita is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com</p>
+                </div>
             </div>
-            {% include menu.html %}
-        </div>
-        <div id="main" itemprop="mainContentOfPage">
-            {{ content }}
-        </div>
-        <div id="ad">
-<SCRIPT charset="utf-8" type="text/javascript" src="http://ws-na.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fkewne-20%2F8001%2F1ca7a32b-b708-48a9-9181-9561f6cfe7c0"> </SCRIPT> <NOSCRIPT><A HREF="http://ws-na.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fkewne-20%2F8001%2F1ca7a32b-b708-48a9-9181-9561f6cfe7c0&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT>
-        </div>
-        <div id="footer" itemscope itemtype="http://schema.org/WPFooter">
-            <div id="footer-ad">
-<script type="text/javascript"><!--
-amazon_ad_tag = "kewne-20"; amazon_ad_width = "728"; amazon_ad_height = "90"; amazon_ad_link_target = "new"; amazon_ad_price = "retail";//--></script>
-<script type="text/javascript" src="http://ir-na.amazon-adsystem.com/s/ads.js"></script>
-
+            <div id="ad" class="uk-width-1-6">
+    <SCRIPT charset="utf-8" type="text/javascript" src="http://ws-na.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fkewne-20%2F8001%2F1ca7a32b-b708-48a9-9181-9561f6cfe7c0"> </SCRIPT> <NOSCRIPT><A HREF="http://ws-na.amazon-adsystem.com/widgets/q?rt=tf_mfw&ServiceVersion=20070822&MarketPlace=US&ID=V20070822%2FUS%2Fkewne-20%2F8001%2F1ca7a32b-b708-48a9-9181-9561f6cfe7c0&Operation=NoScript">Amazon.com Widgets</A></NOSCRIPT>
             </div>
-            <p>Who dares, wins.<p>
-            <p>João Cabrita is a participant in the Amazon Services LLC Associates Program, an affiliate advertising program designed to provide a means for sites to earn advertising fees by advertising and linking to amazon.com</p>
         </div>
     </body>
 </html>
