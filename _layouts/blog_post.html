@@ -21,4 +21,7 @@ layout: default
     </div>
 </div>
 <hr />
+{% if page.has_code %}
+<link rel="stylesheet" href="/stylesheets/code.css" />
+{% endif %}
 {% include comments.html %}
