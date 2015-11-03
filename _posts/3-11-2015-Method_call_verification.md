@@ -3,7 +3,7 @@ layout: blog_post
 title: Reducing tests based on method call verication
 has_code: true
 ---
-Out of the today's programming practices, testing is probably one of the few
+Out of today's programming practices, testing is probably one of the few
 that is widely accepted.
 However, in my opinion, test code tends to be written with less care and,
 as a consequence, to rot much more quickly than application code.
