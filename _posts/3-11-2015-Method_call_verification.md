@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: Reducing tests based on method call verication
+title: Reducing tests based on method call verification
 has_code: true
 ---
 Out of today's programming practices, testing is probably one of the few
