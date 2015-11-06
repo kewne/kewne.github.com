@@ -4,7 +4,7 @@ title: Run chaos in production
 ---
 The project I'm currently working on is about integrating some webservices.
 While developing in a service oriented architecture is convenient in many ways, it also requires a higher level of maturity in deploying and testing the intervening services, and needs to go beyond doing simple unit and functional tests.
-Also, due to the relative stability of today's infrastructure, particularly in development environments where load is light, it's easy to overlook testing of the behavior of system during failures and to underestimate the impact these failures have on the business side.
+Also, due to the relative stability of today's infrastructure, particularly in development environments where load is light, it's easy to overlook testing of the behavior of the system during failures and to underestimate the impact these failures have on the business.
 This has prompted the appearance of a number of tools (of which Netflix's Symian Army is probably the most known) focused on causing failures by adding network latency, crashing application nodes and others.
 
 For the above reasons, I've decided to run some experiments using Vaurien a (now seemingly defunct) TCP proxy developed by Mozilla.
@@ -34,5 +34,5 @@ It also poses a new challenge: how do you convince the non-technical (and even s
 
 While I'm not actively working on this anymore (gotta get actual features out the door!), I'm certainly going to pick it up again and continue to write about my experience here.
 Have you done chaos engineering?
-What's your experience with it been like?
+What has your experience with it been like?
 
