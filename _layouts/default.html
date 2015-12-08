@@ -9,36 +9,36 @@
         <meta name="description" content="{{ page.description }}" />
         {% endif %}
         <title>{{ page.title }} - João Cabrita</title>
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.22.0/css/uikit.min.css" />
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/uikit/2.24.2/css/uikit.gradient.min.css" />
     <link rel="stylesheet" href="/stylesheets/kewne.css" />
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
         <div class="uk-grid">
             <div class="uk-width-6-6">
-                <div id="header">
-                    <div id="banner" itemscope itemtype="http://schema.org/WPHeader">
+                <div>
+                    <div itemscope itemtype="http://schema.org/WPHeader">
                         {% include header.html %}
                     </div>
                     {% include menu.html %}
                 </div>
-                <div id="main">
+                <div id="main" class="uk-container">
                     {{ content }}
                 </div>
+                <hr />
                 <div id="footer" itemscope itemtype="http://schema.org/WPFooter">
-                    <p>Who dares, wins.<p>
+                    <p class="uk-text-small uk-text-muted">Who dares, wins.<p>
                 </div>
             </div>
         </div>
-        <script>
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-         (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-         m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-         })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-        ga('create', 'UA-46219127-1', 'kewne.github.io');
-        ga('send', 'pageview');
-
-        </script>
+        <!-- Google Tag Manager -->
+        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K77BRJ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-K77BRJ');</script>
+        <!-- End Google Tag Manager -->
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
     </body>
