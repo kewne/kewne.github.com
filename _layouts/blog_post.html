@@ -1,11 +1,11 @@
 ---
 layout: default
 ---
-<div class="uk-article" itemscope itemtype="http://schema.org/BlogPosting">
-    <h2 class="uk-article-title" itemprop="name">{{ page.title }}</h2>
-    <span class="footnote uk-article-meta">written by <span itemprop="author">João Cabrita</span> on <span itemprop="datePublished">{{ page.date | date_to_long_string }}</span></span>
+<article class="uk-article" itemscope itemtype="http://schema.org/BlogPosting">
+    <h1 class="uk-article-title" itemprop="name">{{ page.title }}</h1>
+    <span class="uk-article-meta">written by <span itemprop="author">João Cabrita</span> on <span itemprop="datePublished">{{ page.date | date_to_long_string }}</span></span>
 
-    <span itemprop="articleBody">{{ content }}</span>
+    <div class="text-block" itemprop="articleBody">{{ content }}</div>
 
     <hr />
     <div>
@@ -19,7 +19,7 @@ layout: default
              --></a>
             </span>
     </div>
-</div>
+</article>
 <hr />
 {% if page.has_code %}
 <link rel="stylesheet" href="/stylesheets/code.css" />

@@ -1,96 +1,14 @@
-body { 
-  max-width: 40em;
-  margin-right: auto;
-  margin-left: auto;
+#main, #footer {
+    padding: 2ex 2em;
 }
 
-div { margin: 0px; padding: 0px; }
-
-a { text-decoration: none; }
-
-#header
-{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
-	color: white;
-	border-right: 1px solid black;
-	border-left: 1px solid black;
+#resume-container {
+    padding: 2ex 2em;
+}
+#resume-container > div {
+    margin-top: 2ex;
 }
 
-#footer 
-{
-	font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; 
-	font-size: .75em;
+.text-block {
+    max-width: 40em;
 }
-
-#banner
-{
-	background-color: black;
-	padding: 2ex 2em;
-	text-align: left;
-}
-
-#menu
-{
-    display: block;
-    margin: 0px;
-    padding: 0ex 0em;
-}
-
-#main h1, h2, h3 { font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif; }
-
-#main h1 { font-size: 1.75em; }
-#main h2 { font-size: 1.5em; }
-#main h3 { font-size: 1.25em; }
-
-#main 
-{
-	padding: 1ex 1em;
-	font-family: "Trebuchet MS", Helvetica, sans-serif; 
-	border-left: 1px solid black;
-	border-right: 1px solid black;
-    border-bottom: 1px solid black;
-    color: black;
-}
-
-.resume_exp_div div
-{
-	padding: 1ex 1em;
-}
-
-.resume_entry_header
-{
-	margin-bottom: 0px;
-}
-
-.resume_entry_employer
-{
-	font-size: 1.5em;
-	float: left;
-    margin-right: 3em;
-}
-.resume_entry_span
-{
-	font-size: 1.5em;
-	float: right;
-}
-.resume_entry_title
-{
-	display: block;
-	clear: both;
-	font-size: 1.25em;
-	padding-top: 1ex;
-}
-
-.resume_entry_body > p
-{
-	font-size: 1em;
-}
-
-.post_list_entry a { color: black; }
-
-.footnote {
-    font-size: small;
-}
-
-#share_this { display:inline; }
-
