@@ -12,3 +12,10 @@
 .text-block {
     max-width: 40em;
 }
+
+@media print {
+    .print-hidden {
+        /* hide these elements when printing */
+        display: none;
+    }
+}

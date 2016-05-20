@@ -1,10 +1,31 @@
 ---
 layout: default
 ---
-<div>
-	{% include resume_menu.html %}
+<div class="print-hidden">
+    <ul class="uk-subnav uk-subnav-line">
+        <li><a class="resume_menu_entry" href="#professional_exp">Professional Experience</a></li>
+        <li><a class="resume_menu_entry" href="#academic_exp">Education</a></li>
+        <li><a class="resume_menu_entry" href="#talks_pubs">Talks / Publications</a></li>
+    </ul>
 </div>
 <hr />
 <div>
-{{ content }}
+    <div>
+        <h1 id="professional_exp">Professional Experience</h1>
+        <div id="resume-container">
+            {% include professional_exp.html %}
+        </div>
+    </div>
+    <div>
+        <h1 id="academic_exp">Academic Experience</h1>
+        <div id="resume-container">
+            {% include academic_exp.html %}
+        </div>
+    </div>
+    <div>
+        <h1 id="talks_pubs">Talks/Publications</h1>
+        <div id="resume-container">
+            {% include talks_pubs.html %}
+        </div>
+    </div>
 </div>
