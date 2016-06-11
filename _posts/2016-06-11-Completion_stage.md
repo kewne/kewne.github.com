@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: CompletionStage and CompletableFuture tutorial.
+title: CompletionStage and CompletableFuture tutorial
 ---
 Just FYI, I've started working on (yet another) tutorial on Java's CompletionStage and CompletableFuture, [check it out!](https://github.com/kewne/completable-future).
 
