@@ -8,14 +8,32 @@
 #resume-container > div {
     margin-top: 2ex;
 }
+#resume-container > div:first-child {
+    /* Hack to get the box to go under the photo */   
+    z-index: -1;
+}
 
 .text-block {
     max-width: 40em;
 }
 
+#cv-photo {
+    float: right;
+}
+
 @media print {
     .print-hidden {
         /* hide these elements when printing */
+        display: none;
+    }
+    #cv-photo {
+        height: 250px;
+    }
+}
+
+@media not print {
+    .print-only {
+        /* hide these elements when NOT printing */
         display: none;
     }
 }
