@@ -1,0 +1,75 @@
+==================================================================
+https://keybase.io/kewne
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://kewne.github.io
+  * I am kewne (https://keybase.io/kewne) on keybase.
+  * I have a public key with fingerprint F729 D25B F986 75F8 F7A6  37A5 0C1C 4AFC 87A4 67CD
+
+To do so, I am signing this object:
+
+{
+    "body": {
+        "key": {
+            "eldest_kid": "0120035fe1dec7d4a7de7582c55a10c1aaee869c05055322cf9862ef4be06571569c0a",
+            "fingerprint": "f729d25bf98675f8f7a637a50c1c4afc87a467cd",
+            "host": "keybase.io",
+            "key_id": "0c1c4afc87a467cd",
+            "kid": "0101afd38256d62f765f8cbe87e679c30382a691b7e1a1e447f8b7757cffc6af44f70a",
+            "uid": "fa3dddc8f1f1a751e9a01af8c844a019",
+            "username": "kewne"
+        },
+        "service": {
+            "hostname": "kewne.github.io",
+            "protocol": "https:"
+        },
+        "type": "web_service_binding",
+        "version": 1
+    },
+    "ctime": 1483526712,
+    "expire_in": 157680000,
+    "prev": "2c34a5a96a4dda08f4fb8bad1aa01b8bf447fd54fbe0e711451466e624b9672a",
+    "seqno": 9,
+    "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.61
+Comment: https://keybase.io/crypto
+
+yMNnAnicZVJ/UBRVHL9DYpCBwYxAiUhWQmGA2d3b3bd7lEwOaaDJFaPyK5i3u+8d
+O1x3x93CeTBYTkw0EKJGSHNkE5CGSUlmzQSKUM3QSMoPxWoUBzA1p8bpCvkxYO1i
+zjTT++d93/f7+X6+n+/3fb8NW2EIMYbGZC3Wdlh/MJ7vP1xuyLWN8lWE6JC9hLmK
+KEXLF7LJyK0WlyoyYSZIiiZJE4sRJSMJyAwEMgIsT0ssCylSoiBEiOcEiWRJljXR
+tIQFnqMRZkREciygWD0GiWQCK3Yrcjldil3VaDGgBZlmRR0NWMxjADkTgKzGKDEQ
+SzyADAckWUsscbj1DE2cCN0oVXFoPu1R/EDe//EPdZMUxLKJp1lO5mgMOK2KJCIe
+IA4IkonUIpATKBEgClKIYQDmRQBYIGEscRAzDAbLusuX6TA0ybIs8ZjCFAQshQSo
+8/MSzzCaJehAN3LZ4atoWavHjojqZEJzVSgS0qeqt/HfcKpVUUvKxQf9OF0O1SE5
+bFqwRFWdbrOerHqdOtqDxOJ/eYpFxS5rc9QyKpDLrTjshJnSkJKq6MQUw5tYmgMU
+nUygPU7FhYoVHcECjie1o9dBFRolLZkYyEKBg4wsQ5LHDBZ5Ecrab5KUZmF9HDKr
+eRGJAEUxLMVwHOJoRhQ4QOtjcaMyu4MwC5pMaNUo3YrVDtVyl9b2QH9hoMEYYgh6
+JEDfL0PIylUPt45Uwv/eZf71We+xq1m9vwc8FmBrzBNjv9/Hja+aa2joO5nYtjXK
+2jPb/fPu0O+8B20ZtRUrKx2W0hun9xWQh1YcSTccuJLm2hGU11jQZdsc7n9uLm5t
+YoulMODl0ZE77uawrqEDCTvE6sna2NVz2cJBFDm2uf3whvfz6s59GssXcU84F+iU
+NcM+LiHuhdKJs3XXdt+bX+j+bMMl/M7s5KbxxbdywAde02Xf6R9Tc6MtHwbFzYn3
+7w2cpW8GlqT4vP6a211zL93YOk2FoMXJzm1p3dyjzqToSjbY3xIzaHwxePiNM/4k
+tnBjn9978V3HkfTXImR7/PXg2vgadHKnC79X1rtudGGCPbWzjjC8spRNhmUcj7pf
+fxXmP9146cv04ajwnKKeyPyWwWutrf7I7Sq1NGvJrLGM9EmvzyTiqam7ZX5LU0CM
+K15qKvD88WZQ+8jRZ67vbfgr8/m0Ym/7zd9SOqw94zO+O+mrmb0nzt36RsnuM0ao
+0xX9u1o8Dl/n0bUZfw4OeAJ/CT9WZltXtf1CR5gKLzaHzlRu2Z8Z3PrFT519oWEl
+VI7n1hWnKbx5zNyWXbv+E7AUvfHJpvWnzNkX9r+98PjQWO/0U0nZZ+p6T3TeVuuz
+gqeqUDktBPkuexM+avtcSP/4+FcJhp4txurEifptZRl3xTXREfkFm87Phc7vIYsy
+c7+eH/oHlDW6lA==
+=4bgi
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/kewne
+
+==================================================================
