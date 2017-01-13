@@ -1,4 +1,8 @@
 safe: 		true
-highlighter: rouge
 url: http://kewne.github.io
 encoding: UTF-8
+collections:
+  tech:
+    output: true
+  prof_exp:
+    output: false

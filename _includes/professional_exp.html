@@ -1,18 +1,12 @@
-<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-space text-block">
-    <h1 class="uk-panel-title">Business Intelligence Company (through Growin)</h1>
-    <h2 class="uk-panel-title">July 2015 &mdash; Today</h2>
-    <div class="text-block">{% include professional_exp/business_intelligence.html %}</div>
+{% assign xps = site.prof_exp | sort 'start_date' | reverse %}
+{% for exp in xps %}
+{% assign rem = forloop.index | modulo: 2 %}
+<div class="uk-panel uk-panel-box {% if rem == 1 %}uk-panel-box-primary{% endif %} uk-panel-space text-block">
+    <h1 class="uk-panel-title">{{ exp.title}}</h1>
+    <h2 class="uk-panel-title">{{ exp.start_date | date: "%B %Y" }} &mdash; {{ exp.end_date | date: "%B %Y" }}</h2>
+    <div class="text-block">{{ exp.content }}</div>
 </div>
-<div class="uk-panel uk-panel-box uk-panel-space text-block">
-    <h1 class="uk-panel-title">Online Betting Company (through agap2)</h1>
-    <h2 class="uk-panel-title">January 2015 &mdash; June 2015</h2>
-    <div class="text-block">{% include professional_exp/betting2.html %}</div>
-</div>
-<div class="uk-panel uk-panel-box uk-panel-box-primary uk-panel-space text-block">
-    <h1 class="uk-panel-title">Banking Software company (through agap2)</h1>
-    <h2 class="uk-panel-title">January 2014 &mdash; November 2015</h2>
-    <div class="text-block">{% include professional_exp/banking_software.html %}</div>
-</div>
+{% endfor %}
 <div class="uk-panel uk-panel-box uk-panel-space text-block">
     <h1 class="uk-panel-title">Online Betting company (through agap2)</h1>
     <h2 class="uk-panel-title">July 2013 &mdash; December 2013</h2>
