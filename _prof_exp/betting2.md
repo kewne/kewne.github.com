@@ -1,7 +1,10 @@
 ---
 title: Online Betting Company (through agap2)</h1
-start_date: 2015-01-01
+date: 2015-01-01
 end_date: 2015-06-01
+tech:
+- name: Java
+  usage: Heavy
 ---
 This project was a continuation of the Italian site project and aimed at evolving the platform to improve the breadth of betting choices for italian customers.
 

@@ -2,6 +2,17 @@
 title: Business Intelligence Company (through Growin)
 start_date: 2015-07-01
 end_date: Today
+tech:
+- name: Java
+  usage: Heavy
+- name: Spring
+  usage: Heavy
+- name: Kubernetes
+  usage: Heavy
+- name: Cassandra
+  usage: Medium
+- name: MongoDB
+  usage: Medium
 ---
 This project focused on replacing a legacy reporting application that was having trouble scaling.
 

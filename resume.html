@@ -1,4 +1,5 @@
 ---
+title: Resume
 layout: default
 ---
 <div class="print-hidden">
@@ -23,7 +24,32 @@ layout: default
     <div>
         <h1 id="professional_exp">Professional Experience</h1>
         <div id="resume-container">
-            {% include professional_exp.html %}
+            {% assign xps = site.prof_exp | reverse %}
+            {% for exp in xps %}
+            {% assign rem = forloop.index | modulo: 2 %}
+            <div class="uk-panel uk-panel-box {% if rem == 1 %}uk-panel-box-primary{% endif %} uk-panel-space text-block">
+                <h1 class="uk-panel-title">{{ exp.title}}</h1>
+                <h2 class="uk-panel-title">{{ exp.date | date: "%B %Y" }} &mdash; {{ exp.end_date | date: "%B %Y" }}</h2>
+                <p>{{ exp.content }}</p>
+                <table class="uk-table">
+                    <caption>Technologies Used</caption>
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Usage</th>
+                        </tr>
+                     </thead>
+                    <tbody>
+                        {% for t in exp.tech %}
+                        <tr>
+                            <td>{{ t.name }}</td>
+                            <td>{{ t.usage }}</td>
+                        </tr>
+                        {% endfor %}
+                    </tbody>
+                </table>
+            </div>
+            {% endfor %}
         </div>
     </div>
     <div>

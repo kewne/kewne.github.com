@@ -9,26 +9,22 @@
         <meta name="description" content="{{ page.description }}" />
         {% endif %}
         <title>{{ page.title }} - João Cabrita</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/css/uikit.gradient.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.gradient.min.css">
     <link rel="stylesheet" href="/stylesheets/kewne.css" />
     </head>
     <body itemscope itemtype="http://schema.org/WebPage">
-        <div class="uk-grid">
-            <div class="uk-width-6-6">
-                <div class="print-hidden">
-                    <div itemscope itemtype="http://schema.org/WPHeader">
-                        {% include header.html %}
-                    </div>
-                    {% include menu.html %}
-                </div>
-                <div id="main" class="uk-container">
-                    {{ content }}
-                </div>
-                <hr />
-                <div id="footer" itemscope itemtype="http://schema.org/WPFooter">
-                    <p class="uk-text-small uk-text-muted">Who dares, wins.<p>
-                </div>
+        <div class="print-hidden">
+            <div itemscope itemtype="http://schema.org/WPHeader">
+                {% include header.html %}
             </div>
+            {% include menu.html %}
+        </div>
+        <div id="main" class="uk-container">
+            {{ content }}
+        </div>
+        <hr />
+        <div id="footer" itemscope itemtype="http://schema.org/WPFooter">
+            <p class="uk-text-small uk-text-muted">Who dares, wins.<p>
         </div>
         <!-- Google Tag Manager -->
         <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K77BRJ"
