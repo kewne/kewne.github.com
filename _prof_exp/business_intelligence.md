@@ -1,6 +1,6 @@
 ---
 title: Business Intelligence Company (through Growin)
-start_date: 2015-07-01
+date: 2015-07-01
 end_date: Today
 tech:
 - name: Java
