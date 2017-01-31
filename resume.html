@@ -24,7 +24,7 @@ layout: default
     <div>
         <h1 id="professional_exp">Professional Experience</h1>
         <div id="resume-container">
-            {% assign xps = site.prof_exp | reverse %}
+            {% assign xps = site.prof_exp | sort: 'date' | reverse %}
             {% for exp in xps %}
             {% assign rem = forloop.index | modulo: 2 %}
             <div class="uk-panel uk-panel-box {% if rem == 1 %}uk-panel-box-primary{% endif %} uk-panel-space text-block">

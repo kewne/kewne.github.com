@@ -1,7 +1,6 @@
 ---
 title: Deloitte
 date: 2010-02-01
-start_date: 2010-02-01
 end_date: 2011-08-31
 tech:
 - name: Java
