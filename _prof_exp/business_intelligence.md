@@ -5,7 +5,9 @@ end_date: Today
 tech:
 - name: Java
   usage: Heavy
-- name: Spring
+- name: Spring Framework
+  usage: Heavy
+- name: Spring Boot
   usage: Heavy
 - name: Kubernetes
   usage: Heavy

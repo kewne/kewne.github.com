@@ -5,6 +5,8 @@ end_date: 2015-06-01
 tech:
 - name: Java
   usage: Heavy
+- name: Spring Framework
+  usage: Heavy
 ---
 This project was a continuation of the Italian site project and aimed at evolving the platform to improve the breadth of betting choices for italian customers.
 

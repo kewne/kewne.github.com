@@ -5,6 +5,10 @@ end_date: 2011-08-31
 tech:
 - name: Java
   usage: Heavy
+- name: Spring Framework
+  usage: Heavy
+- name: Hibernate
+  usage: Heavy
 ---
 My first professional experience was at Deloitte, working part-time on a Java Web-based Customer Relationship Management application as part of a team of three people.
 The internship provided me with lots of learning opportunities on the basics of application development and business in general.

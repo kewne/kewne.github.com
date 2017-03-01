@@ -5,6 +5,8 @@ end_date: 2013-12-31
 tech:
 - name: Java
   usage: Heavy
+- name: Spring Framework
+  usage: Heavy
 ---
 The project's goal was to replicate the company's current international website user experience in its italian website.
 
