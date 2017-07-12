@@ -1,6 +1,6 @@
 ---
 layout: blog_post
-title: Ok, we’re doing iterations: are we agile now?
+title: "Ok, we’re doing iterations: are we agile now?"
 ---
 > Despite their usefulness, teams sometimes use iterations incorrectly, decreasing their effectiveness. Here I describe a couple of patterns in which I’ve seen poor use of iterations.
 
