@@ -7,6 +7,7 @@
 }
 #resume-container > div {
     margin-top: 2ex;
+    page-break-inside: avoid;
 }
 #resume-container > div:first-child {
     /* Hack to get the box to go under the photo */   
@@ -15,6 +16,10 @@
 
 .text-block {
     max-width: 40em;
+}
+
+.no-break {
+    page-break-inside: avoid;
 }
 
 #cv-photo {
