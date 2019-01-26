@@ -1,7 +1,7 @@
 ---
 title: Business Intelligence Company (through Growin)
 date: 2015-07-01
-end_date: Today
+end_date: 2017-07-31
 tech:
 - name: Java
   usage: Heavy
