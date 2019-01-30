@@ -16,6 +16,7 @@
 
 .text-block {
     max-width: 40em;
+    text-align: justify;
 }
 
 .no-break {

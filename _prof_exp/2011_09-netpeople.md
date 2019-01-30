@@ -6,8 +6,7 @@ tech:
 - name: Java
   usage: Heavy
 ---
-After spending a year working full-time at Deloitte, I decided to explore some other project opportunities and got the chance to move to NetPeople.
-I was assigned to a project on a major company in the field of telecommunications, developing a Java application for Network Management.
+This project was for a major company in the field of telecommunications, developing a Java application for Network Management.
 Specifically, I worked as part of one of the development teams, totalling twelve people.
 
 The company I was in was adopting Agile development methods (Scrum) and this was my first contact with that methodology.
