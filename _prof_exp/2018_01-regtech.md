@@ -23,7 +23,7 @@ tech:
 This project's main focus was modernizing the company's applications and delivery processes.
 It also included ensuring GDPR compliance and preparing for security certification.
 
-I worked remotely for this project.
+I worked remotely for this project, as part of a team of 6 people.
 
 My contributions included:
 * designing much of the standard automated delivery process;

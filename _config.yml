@@ -3,9 +3,8 @@ url: http://kewne.github.io
 encoding: UTF-8
 exclude:
 - .idea
+- vendor
 collections:
-  tech:
-    output: true
   prof_exp:
     output: false
 
