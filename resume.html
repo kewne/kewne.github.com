@@ -13,7 +13,6 @@ layout: default
         <li><a class="resume_menu_entry" href="#professional_exp">Professional Experience</a></li>
         <li><a class="resume_menu_entry" href="#academic_exp">Education</a></li>
         <li><a class="resume_menu_entry" href="#talks_pubs">Talks / Publications</a></li>
-        <li><a class="resume_menu_entry" href="#technical_experience">Technical Experience</a></li>
     </ul>
 </div>
 <img id="cv-photo" src="/images/photo.jpg" alt="A picture of me." />
@@ -33,7 +32,7 @@ layout: default
                 <h1 class="uk-panel-title">{{ exp.title}}</h1>
                 <h2 class="uk-panel-title">{{ exp.date | date: "%B %Y" }} &mdash; {{ exp.end_date | date: "%B %Y" }}</h2>
                 <p>{{ exp.content }}</p>
-                <table class="uk-table">
+                <table class="uk-table no-break">
                     <caption>Technologies Used</caption>
                     <thead>
                         <tr>

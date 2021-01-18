@@ -7,7 +7,6 @@
 }
 #resume-container > div {
     margin-top: 2ex;
-    page-break-inside: avoid;
 }
 #resume-container > div:first-child {
     /* Hack to get the box to go under the photo */   
@@ -20,7 +19,7 @@
 }
 
 .no-break {
-    page-break-inside: avoid;
+    break-inside: avoid-page;
 }
 
 #cv-photo {
