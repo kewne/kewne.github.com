@@ -1,6 +1,8 @@
 ---
 layout: blog_post
 title: Thoughts on Hypermedia
+tags:
+- REST
 ---
 One of the services maintained by my team on my current project exposes a RESTish API and a pub-sub mechanism for receiving notifications when a resource is modified.
 The service was originally created for a single consuming service, also under my team's responsibility, but is expected to be consumed by new services in the not so distant future.

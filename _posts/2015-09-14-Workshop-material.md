@@ -1,6 +1,8 @@
 ---
 layout: blog_post
 title: Workshop material, Continuous Delivery style
+tags:
+- continuous delivery
 ---
 These past couple of weeks, I've been preparing a workshop comprising a slide deck and some practice material.
 I have done this before but, this time, I also had to select and prepare the development environment for the trainees.

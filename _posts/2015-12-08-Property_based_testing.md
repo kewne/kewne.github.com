@@ -1,7 +1,6 @@
 ---
 layout: blog_post
 title: Property-based testing
-has_code: true
 ---
 Property-based testing is a technique I've started using a couple of years ago, which is essentially a way of asserting a certain property of a piece of code that holds for a whole category of inputs.
 This is opposed to example based testing, which uses a finite and fixed set of data points.

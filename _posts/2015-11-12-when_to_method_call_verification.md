@@ -1,6 +1,8 @@
 ---
 layout: blog_post
 title: When to do method call verification
+tags:
+- testing
 ---
 Ironically, a few days after my post explaining why you shouldn't write tests based on method call verification, I ended up finding a case where it's not only useful but also the *Right Thing To Do&trade;*.
 

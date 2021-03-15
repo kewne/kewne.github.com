@@ -1,6 +1,8 @@
 ---
 layout: blog_post
 title: The role of Media Types in REST
+tags:
+- REST
 ---
 REST (**Re**presentational **S**tate **T**ransfer) is an architectural style
 that I've grown very interested in over the years and try to use when

@@ -1,7 +1,8 @@
 ---
 layout: blog_post
 title: Reducing tests based on method call verification
-has_code: true
+tags:
+- testing
 ---
 Out of today's programming practices, testing is probably one of the few
 that is widely accepted.

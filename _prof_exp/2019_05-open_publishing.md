@@ -1,7 +1,6 @@
 ---
 title: Open Publishing
 date: 2019-05-01
-end_date: Today
 tech:
 - name: Python
   usage: Heavy

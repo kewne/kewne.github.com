@@ -28,9 +28,12 @@ layout: default
             {% assign xps = site.prof_exp | sort: 'date' | reverse %}
             {% for exp in xps %}
             {% assign rem = forloop.index | modulo: 2 %}
+            {% if exp.end_date %}
+            {% assign end_date = exp.end_date | date: "%B %Y" %}
+            {% endif %}
             <div class="uk-panel uk-panel-box {% if rem == 1 %}uk-panel-box-primary{% endif %} uk-panel-space text-block">
                 <h1 class="uk-panel-title">{{ exp.title}}</h1>
-                <h2 class="uk-panel-title">{{ exp.date | date: "%B %Y" }} &mdash; {{ exp.end_date | date: "%B %Y" }}</h2>
+                <h2 class="uk-panel-title">{{ exp.date | date: "%B %Y" }} &mdash; {{ end_date | default: 'Current' }}</h2>
                 <p>{{ exp.content }}</p>
                 <table class="uk-table no-break">
                     <caption>Technologies Used</caption>

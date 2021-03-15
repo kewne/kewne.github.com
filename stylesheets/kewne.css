@@ -22,6 +22,10 @@
     break-inside: avoid-page;
 }
 
+.h-list > * {
+    display: inline;
+}
+
 #cv-photo {
     float: right;
 }
