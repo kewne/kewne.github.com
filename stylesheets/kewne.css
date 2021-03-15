@@ -11,6 +11,7 @@
 #resume-container > div:first-child {
     /* Hack to get the box to go under the photo */   
     z-index: -1;
+    margin-top: 0;
 }
 
 .text-block {
