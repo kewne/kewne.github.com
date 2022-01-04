@@ -4,13 +4,14 @@ title: Thoughts on REST style APIs
 tags:
 - REST
 ---
-I've recently had the opportunity to design a RESTful API at work;
-while this isn't the first time I've done it, it's the first time I'm
-in a position to seriously influence the design and see how some 
-of my design ideas work out in the real world.
+I've worked with RESTful APIs for much of my career;
+besides being pretty much unavoidable anyway, they've always
+had a warm place in my heart and I'm very interested in learning
+more about how to design them.
 
-While, overall, I think they are working out, I've also started to
-hit some issues that lead me to the realization that the REST style
+While, overall, I think they are a great default for starting
+to build an API (especially a public one), I've also started to
+see some issues that lead me to the realization that the REST style
 has many limitations when applied to APIs.
 
 <aside>
@@ -30,7 +31,7 @@ When defending the REST architectural style, I usually reach for the domination 
 Internet as we know it as the prime example;
 the almost complete adoption by browsers of HTTP, HTML and other standards,
 means that users can use these browsers to consume every website in existance
-in a way that "just works".
+in a way that "just works" (because it subscribes to the Uniform Interface).
 This is the ideal that REST strives to achieve: a distributed but ubiquitous and performant
 system.
 
@@ -193,7 +194,7 @@ and that negative ones are bad (i.e. red) **built-in by the programmer**!
 # Useful still?
 
 So, does the fact that REST has limitations
-on what can be achieved when applied to APIs, mean that we should stop using it?
+on what can be achieved when applied to APIs mean that we should stop using it?
 
 I don't believe so.
 
@@ -269,3 +270,24 @@ or auto-generating it from a spec (assuming one exists, in which case you still 
 to set up the toolchain for it);
 by contrast, the hypermedia API requires only a dependency on a library that uses the
 correct media type.
+
+In summary, what this means is that media types that allow for HATEOAS provide
+a built-in mechanism for navigation that **you** don't have to build;
+this may not lower the majority of the engineering cost of developing
+an API client but it does reduce it a bit: over time, these small improvements
+can accumulate into a significant difference.
+
+## REST isn't just the Uniform Interface
+
+What I've described is just a limitation in one of the aspects of the REST
+architectural style: the Uniform Interface.
+However, REST also outlines other constraints in order to provide additional
+benefits like cacheability, which means that you still get those.
+
+# Conclusion
+
+In this post, I've outlined some limitations I've identified from my work
+designing REST APIs, as well as what I think that could mean for the 
+REST architectural style as applied to APIs.
+While APIs may never reap the full benefits (at least compared to "regular" websites),
+they still get most of them.
