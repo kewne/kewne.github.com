@@ -7,7 +7,6 @@ tags:
 ---
 One of my favorite software development activities is designing:
 thinking of how to create components so they work together really gets me going.
-
 Today, I wanted to write a bit on the way I consider trade-offs in designs.
 In particular, I focus a lot on options.
 
