@@ -8,3 +8,19 @@ collections:
   prof_exp:
     output: false
 
+title: João Cabrita's Home Page
+author:
+  twitter: joaorcabrita
+twitter:
+  username: joaorcabrita
+social:
+  links:
+  - https://twitter.com/joaorcabrita
+  - https://instagram.com/o_joao_cabrita
+  - https://www.linkedin.com/in/joaorcabrita
+
+
+whitelist:
+  - jekyll-seo-tag
+plugins:
+- jekyll-seo-tag
