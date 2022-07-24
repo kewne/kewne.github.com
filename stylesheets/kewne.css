@@ -8,11 +8,6 @@
 #resume-container > div {
     margin-top: 2ex;
 }
-#resume-container > div:first-child {
-    /* Hack to get the box to go under the photo */   
-    z-index: -1;
-    margin-top: 0;
-}
 
 .text-block {
     max-width: 40em;
@@ -29,6 +24,8 @@
 
 #cv-photo {
     float: right;
+    z-index: 1;
+    position: relative;
 }
 
 @media print {
@@ -46,4 +43,9 @@
         /* hide these elements when NOT printing */
         display: none;
     }
+}
+
+:target {
+    transition: outline 1s ease-in-out;
+    outline: solid red 1px;
 }
