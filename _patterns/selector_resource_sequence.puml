@@ -1,0 +1,8 @@
+@startuml selector_resource
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+@enduml
