@@ -5,66 +5,101 @@ layout: default
 <div class="print-hidden">
     <h4>Like what you see here?</h4>
     <ul>
-      <li><a href="mailto:joao.r.cabrita@gmail.com">Email me!</a></li>
-      <li><button onClick="window.print()">Print this!</button></li>
+        <li><a href="mailto:joao.r.cabrita@gmail.com">Email me!</a></li>
+        <li><button onClick="window.print()">Print this!</button></li>
     </ul>
     </p>
-    <ul class="uk-subnav uk-subnav-line">
-        <li><a class="resume_menu_entry" href="#professional_exp">Professional Experience</a></li>
-        <li><a class="resume_menu_entry" href="#academic_exp">Education</a></li>
-        <li><a class="resume_menu_entry" href="#talks_pubs">Talks / Publications</a></li>
+    <ul class="uk-subnav uk-subnav-divider">
+        <li><a class="resume_menu_entry" href="#professional_exp" uk-scroll>Professional Experience</a></li>
+        <li><a class="resume_menu_entry" href="#academic_exp" uk-scroll>Education</a></li>
+        <li><a class="resume_menu_entry" href="#talks_pubs" uk-scroll>Talks / Publications</a></li>
     </ul>
 </div>
-<img id="cv-photo" src="/images/photo.jpg" alt="A picture of me." />
 <div class="print-only">
     <h1>João Cabrita</h1>
     <h2>kewne@protonmail.com</h2>
 </div>
 <hr />
-<div>
-    <div>
+<div class="uk-container-small">
+    <div class="uk-section uk-section-default uk-padding">
         <h1 id="professional_exp">Professional Experience</h1>
-        <div id="resume-container">
+        <div>
             {% assign xps = site.prof_exp | sort: 'date' | reverse %}
             {% for exp in xps %}
             {% assign rem = forloop.index | modulo: 2 %}
             {% if exp.end_date %}
             {% assign end_date = exp.end_date | date: "%B %Y" %}
             {% endif %}
-            <div class="uk-panel uk-panel-box {% if rem == 1 %}uk-panel-box-primary{% endif %} uk-panel-space text-block">
-                <h1 class="uk-panel-title">{{ exp.title}}</h1>
-                <h2 class="uk-panel-title">{{ exp.date | date: "%B %Y" }} &mdash; {{ end_date | default: 'Current' }}</h2>
-                <p>{{ exp.content }}</p>
-                <table class="uk-table no-break">
-                    <caption>Technologies Used</caption>
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Usage</th>
-                        </tr>
-                     </thead>
-                    <tbody>
-                        {% for t in exp.tech %}
-                        <tr>
-                            <td>{{ t.name }}</td>
-                            <td>{{ t.usage }}</td>
-                        </tr>
-                        {% endfor %}
-                    </tbody>
-                </table>
+            <div
+                class="uk-tile {% if rem == 1%} uk-tile-primary {% else %} uk-tile-secondary {% endif %} uk-preserve-color uk-padding uk-animation-fade">
+                <div class="uk-light">
+                    <h1>{{ exp.title}}</h1>
+                    <p>{{ exp.date | date: "%B %Y" }} &mdash; {{ end_date | default: 'Current' }}
+                    </p>
+                </div>
+                <div class="uk-card uk-card-default">
+                    <div class="uk-card-body">
+                        <p>{{ exp.content }}</p>
+                    </div>
+                    <div class="uk-card-footer">
+                        <table class="uk-table no-break">
+                            <caption>Technologies Used</caption>
+                            <thead>
+                                <tr>
+                                    <th>Name</th>
+                                    <th>Usage</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {% for t in exp.tech %}
+                                <tr>
+                                    <td>{{ t.name }}</td>
+                                    <td>{{ t.usage }}</td>
+                                </tr>
+                                {% endfor %}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
             </div>
             {% endfor %}
         </div>
     </div>
-    <div>
+    <div class="uk-section uk-section-muted uk-padding">
         <h1 id="academic_exp">Academic Experience</h1>
-        <div id="resume-container">
-            {% include academic_exp.html %}
+        <div class="uk-tile uk-tile-primary">
+            <h2>Languages</h2>
+            <div>{% include academic_exp/language.html %}</div>
+        </div>
+        <div class="uk-tile uk-tile-secondary">
+            <h2>Technical Certifications</h2>
+            <div>{% include academic_exp/tech_certs.html %}</div>
+        </div>
+        <div class="uk-tile uk-tile-primary">
+            <h2>College</h2>
+            <h4>MSc Electrical and Computer Engineering &mdash; Instituto Superior Técnico
+            </h4>
+            <h5>September 2004 &mdash; October 2010</h5>
+            <div class="text-block">
+                <p>Graduated from the 1st cycle of studies with an average of 14 out of 20 points.</p>
+                <p>Graduated from the 2nd cycle of studies with an average of 16 out of 20 points.</p>
+                <p>As a requisite for the Master of Science degree, wrote and defended the thesis
+                    "Brain-Computer
+                    Interfaces".</p>
+            </div>
+        </div>
+        <div class="uk-tile uk-tile-secondary">
+            <h2>Others</h2>
+            <dl class="uk-description-list-divider">
+                <dt>Member of the <a href="https://algarvetoastmastersclub.com/">Algarve Toastmasters Club</a> since
+                    October 2022</dt>
+                <dd>Toastmasters International</dd>
+            </dl>
         </div>
     </div>
-    <div>
+    <div class="uk-section uk-section-default uk-padding">
         <h1 id="talks_pubs">Talks/Publications</h1>
-        <div id="resume-container">
+        <div>
             {% include talks_pubs.html %}
         </div>
     </div>

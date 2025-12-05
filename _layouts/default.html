@@ -1,43 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-        <meta charset="UTF-8">
-        <meta name="msvalidate.01" content="92C8A7DB79E50BB9AE4239535E09EDB1" />
-        <meta name=viewport content="width=device-width, initial-scale=1">
-        {% if page.description != null %}
-        <meta name="description" content="{{ page.description }}" />
-        {% endif %}
-        <title>{{ page.title }} - João Cabrita</title>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.27.2/css/uikit.gradient.min.css">
-        <link rel="stylesheet" href="/stylesheets/kewne.css" />
-        {% seo %}
-    </head>
-    <body itemscope itemtype="http://schema.org/WebPage">
-        <div class="print-hidden">
-            <div itemscope itemtype="http://schema.org/WPHeader">
-                {% include header.html %}
-            </div>
-            {% include menu.html %}
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta charset="UTF-8">
+    <meta name="msvalidate.01" content="92C8A7DB79E50BB9AE4239535E09EDB1" />
+    <meta name=viewport content="width=device-width, initial-scale=1">
+    {% if page.description != null %}
+    <meta name="description" content="{{ page.description }}" />
+    {% endif %}
+    <title>{{ page.title }} - João Cabrita</title>
+    <link rel="stylesheet" href="/stylesheets/kewne.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.25.1/dist/css/uikit.min.css">
+    {% seo %}
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+    <div class="print-hidden">
+        <div itemscope itemtype="http://schema.org/WPHeader">
+            {% include header.html %}
         </div>
-        <div id="main" class="uk-container">
-            {{ content }}
-        </div>
-        <hr />
-        <div id="footer" itemscope itemtype="http://schema.org/WPFooter">
-            <p class="uk-text-small uk-text-muted">Who dares, wins.<p>
-        </div>
-        <!-- Google Tag Manager -->
-        <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K77BRJ"
-        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-K77BRJ');</script>
-        <!-- End Google Tag Manager -->
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-        <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/uikit.min.js"></script>
-    </body>
+        {% include menu.html %}
+    </div>
+    <div class="uk-container uk-padding">
+        {{ content }}
+    </div>
+    <hr />
+    <div id="footer" class="uk-padding" itemscope itemtype="http://schema.org/WPFooter">
+        <p class="uk-text-small uk-text-muted">Who dares, wins.
+        <p>
+    </div>
+    <!-- Google Tag Manager -->
+    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K77BRJ" height="0" width="0"
+            style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function (w, d, s, l, i) {
+            w[l] = w[l] || []; w[l].push({
+                'gtm.start':
+                    new Date().getTime(), event: 'gtm.js'
+            }); var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+                    '//www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-K77BRJ');</script>
+    <!-- End Google Tag Manager -->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.1/dist/js/uikit.min.js"></script>
+</body>
+
 </html>

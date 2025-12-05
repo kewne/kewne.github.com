@@ -1,24 +1,16 @@
-#main, #footer {
+#main {
     padding: 2ex 2em;
-}
-
-#resume-container {
-    padding: 2ex 2em;
-}
-#resume-container > div {
-    margin-top: 2ex;
 }
 
 .text-block {
     max-width: 40em;
-    text-align: justify;
 }
 
 .no-break {
     break-inside: avoid-page;
 }
 
-.h-list > * {
+.h-list>* {
     display: inline;
 }
 
@@ -33,6 +25,7 @@
         /* hide these elements when printing */
         display: none;
     }
+
     #cv-photo {
         height: 250px;
     }
@@ -43,9 +36,4 @@
         /* hide these elements when NOT printing */
         display: none;
     }
-}
-
-:target {
-    transition: outline 1s ease-in-out;
-    outline: solid red 1px;
 }
