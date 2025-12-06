@@ -68,7 +68,9 @@ layout: default
     <div class="uk-section uk-section-default">
         <h1 id="academic_exp">Academic Experience</h1>
         <div class="uk-tile uk-tile-primary uk-preserve-color">
-            <h2 class="uk-light">Languages</h2>
+            <div class="uk-light">
+                <h2>Languages</h2>
+            </div>
             {% for language in site.data.languages %}
             {% assign rem = forloop.index | modulo: 2 %}
             <div class="uk-tile {% if rem == 1 %} uk-tile-default {% else %} uk-tile-muted {% endif %} uk-padding-small">
@@ -93,30 +95,44 @@ layout: default
             </div>
             {% endfor %}
         </div>
-        <div class="uk-tile uk-tile-secondary">
-            <h2>Technical Certifications</h2>
-            <div>{% include academic_exp/tech_certs.html %}</div>
+        <div class="uk-tile uk-tile-secondary uk-preserve-color">
+            <div class="uk-light">
+                <h2>Technical Certifications</h2>
+            </div>
+            {% for cert in site.data.technical_certifications %}
+            {% assign rem = forloop.index | modulo: 2 %}
+            <div class="uk-tile {% if rem == 1 %} uk-tile-default {% else %} uk-tile-muted {% endif %} uk-padding-small">
+                <h5 class="uk-margin-remove-bottom">{{cert.name}} {%- if cert.issuer %} ({{ cert.issuer }}){% endif %}</h5>
+            </div>
+            {% endfor %}
         </div>
-        <div class="uk-tile uk-tile-primary">
-            <h2>College</h2>
-            <h4>MSc Electrical and Computer Engineering &mdash; Instituto Superior Técnico
-            </h4>
-            <h5>September 2004 &mdash; October 2010</h5>
-            <div class="text-block">
-                <p>Graduated from the 1st cycle of studies with an average of 14 out of 20 points.</p>
-                <p>Graduated from the 2nd cycle of studies with an average of 16 out of 20 points.</p>
-                <p>As a requisite for the Master of Science degree, wrote and defended the thesis
-                    "Brain-Computer
-                    Interfaces".</p>
+        <div class="uk-tile uk-tile-primary uk-preserve-color">
+            <div class="uk-light">
+                <h2>College</h2>
+            </div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <h4>MSc Electrical and Computer Engineering &mdash; Instituto Superior Técnico
+                    </h4>
+                    <h5 class="uk-text-meta">September 2004 &mdash; October 2010</h5>
+                </div>
+                <div class="uk-card-body">
+                    <p>Graduated from the 1st cycle of studies with an average of 14 out of 20 points.</p>
+                    <p>Graduated from the 2nd cycle of studies with an average of 16 out of 20 points.</p>
+                    <p>As a requisite for the Master of Science degree, wrote and defended the thesis "Brain-Computer Interfaces".</p>
+                </div>
             </div>
         </div>
-        <div class="uk-tile uk-tile-secondary">
-            <h2>Others</h2>
-            <dl class="uk-description-list-divider">
-                <dt>Member of the <a href="https://algarvetoastmastersclub.com/">Algarve Toastmasters Club</a> since
-                    October 2022</dt>
-                <dd>Toastmasters International</dd>
-            </dl>
+        <div class="uk-tile uk-tile-secondary uk-preserve-color">
+            <div class="uk-light">
+                <h2>Others</h2>
+            </div>
+            <div class="uk-card uk-card-default">
+                <div class="uk-card-header">
+                    <h4>Member of <a href="https://algarvetoastmastersclub.com/">Algarve Toastmasters Club</a></h4>
+                    <p class="uk-text-meta">October 2022 &mdash; December 2024</p>
+                </div>
+            </div>
         </div>
     </div>
     <div class="uk-section uk-section-default">
