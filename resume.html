@@ -103,18 +103,20 @@ layout: default
             {% assign talks = site.talks | reverse %}
             {% for talk in talks %}
             {% assign rem = forloop.index | modulo: 2 %}
-            <div id="talk_roguest"
+            <div id="{{talk.title | slugify}}"
                 class="uk-tile {% if rem == 1 %} uk-tile-primary {% else %} uk-tile-secondary {% endif %} uk-preserve-color">
                 <div class="uk-panel uk-light uk-margin-medium">
                     <h1>{{ talk.title }}</h1>
-                    <p class="uk-text-meta">Geek Sessions &mdash; {{ talk.date | date: "%d %B %Y" }}</p>
+                    <p class="uk-text-meta">{{talk.venue}} &mdash; {{ talk.date | date: "%d %B %Y" }}</p>
                 </div>
                 <div class="uk-card uk-card-default">
                     <div class="uk-card-body">
                         {{ talk.content }}
                     </div>
                     <div class="uk-card-footer">
-                        <p><a href="https://youtu.be/CKw0rK-dJGE">Recording</a></p>
+                        {% for link in talk.links %}
+                        <p><a href="{{link.url}}">{{link.text}}</a></p>
+                        {% endfor %}
                     </div>
                 </div>
             </div>

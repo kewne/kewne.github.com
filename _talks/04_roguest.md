@@ -1,7 +1,10 @@
 ---
 title: 'RoguEST API: A comparison of API design styles'
+venue: 'Geek Sessions'
 date: 2024-02-24
-
+links:
+- text: Recording
+  url: https://youtu.be/CKw0rK-dJGE
 ---
 I discuss the properties that arise from designing the same API in two different design styles:
 
