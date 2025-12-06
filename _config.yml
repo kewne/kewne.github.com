@@ -5,6 +5,8 @@ collections:
     output: false
   patterns:
     output: true
+  talks:
+    output: false
 
 defaults:
   - scope:
