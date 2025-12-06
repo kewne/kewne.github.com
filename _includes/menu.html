@@ -1,40 +1,30 @@
 <div itemprop="breadcrumb">
-    <nav class="uk-navbar-container">
-        <div class="uk-container">
-            <div uk-navbar>
-                <div class="uk-navbar-left">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a href="/index">Home</a>
-                        </li>
-                        <li>
-                            <a href="/resume">Curriculum</a>
-                        </li>
-                        <li>
-                            <a href="/posts">Blog</a>
-                        </li>
-                        <li>
-                            <a href="/patterns">Patterns</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="uk-navbar-right">
-                    <ul class="uk-navbar-nav">
-                        <li>
-                            <a href="/feed.rss"><img id="rss-img" src="/images/Feed-icon.svg" / width="32"
-                                    height="32"></a>
-                        </li>
-                        <li>
-                            <a href="https://twitter.com/joaorcabrita" target="_blank"><img id="twitter-img"
-                                    src="/images/bird_blue_32.png" alt="@joaorcabrita on Twitter" /></a>
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/joaorcabrita" target="_blank"><img id="linkedin-img"
-                                    src="/images/InBug-30px-R.png" alt="LinkedIn&reg; profile" /></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
+    <nav class="uk-navbar uk-navbar-container uk-container" uk-navbar>
+        <div class="uk-navbar-left">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a href="/index">Home</a>
+                </li>
+                <li>
+                    <a href="/resume">Curriculum</a>
+                </li>
+                <li>
+                    <a href="/posts">Blog</a>
+                </li>
+                <li>
+                    <a href="/patterns">Patterns</a>
+                </li>
+            </ul>
+        </div>
+        <div class="uk-navbar-right">
+            <ul class="uk-navbar-nav">
+                <li>
+                    <a aria-label="RSS feed" uk-icon="icon: rss" href="/feed.rss"></a>
+                </li>
+                <li>
+                    <a aria-label="LinkedIn" uk-icon="icon: linkedin" href="https://www.linkedin.com/in/joaorcabrita" target="_blank"></a>
+                </li>
+            </ul>
         </div>
     </nav>
 </div>

@@ -1,17 +1,7 @@
-#main {
-    padding: 2ex 2em;
-}
 
-.text-block {
-    max-width: 40em;
-}
 
 .no-break {
     break-inside: avoid-page;
-}
-
-.h-list>* {
-    display: inline;
 }
 
 #cv-photo {

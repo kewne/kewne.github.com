@@ -16,15 +16,15 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-    <div class="print-hidden">
-        <div itemscope itemtype="http://schema.org/WPHeader">
+    <div>
+        <div class="print-hidden" itemscope itemtype="http://schema.org/WPHeader">
             {% include header.html %}
         </div>
         <div id="main" class="uk-container">
             {{ content }}
         </div>
         <hr />
-        <div id="footer" itemscope itemtype="http://schema.org/WPFooter">
+        <div id="footer" class="uk-container print-hidden" itemscope itemtype="http://schema.org/WPFooter">
             <p class="uk-text-small uk-text-muted">Who dares, wins.
             <p>
         </div>
@@ -40,8 +40,9 @@
 
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-        <script type="text/javascript"
-            src="https://cdnjs.cloudflare.com/ajax/libs/uikit/2.26.3/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.1/dist/js/uikit.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/uikit@3.25.1/dist/js/uikit-icons.min.js"></script>
+
 </body>
 
 </html>
