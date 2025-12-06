@@ -42,23 +42,15 @@ layout: default
                         <p>{{ exp.content }}</p>
                     </div>
                     <div class="uk-card-footer">
-                        <table class="uk-table no-break">
-                            <caption>Technologies Used</caption>
-                            <thead>
-                                <tr>
-                                    <th>Name</th>
-                                    <th>Usage</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                {% for t in exp.tech %}
-                                <tr>
-                                    <td>{{ t.name }}</td>
-                                    <td>{{ t.usage }}</td>
-                                </tr>
-                                {% endfor %}
-                            </tbody>
-                        </table>
+                        <h3>Technologies Used</h3>
+                        <div class="uk-column-1-3">
+                            {% for t in exp.tech %}
+                            <div class="uk-card {% cycle "uk-card-primary", "uk-card-secondary" %} uk-padding-small uk-margin-xsmall" style="break-inside: avoid-column;">
+                                <dt>{{ t.name }}</dt>
+                                <dd>{{ t.usage }}</dd>
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
                 </div>
             </div>
@@ -123,12 +115,12 @@ layout: default
                 </div>
             </div>
         </div>
-        <div class="uk-tile uk-tile-secondary uk-preserve-color">
+        <div class="uk-tile uk-tile-secondary uk-preserve-color" style="break-before: page;">
             <div class="uk-light">
                 <h2>Others</h2>
             </div>
-            <div class="uk-card uk-card-default">
-                <div class="uk-card-header">
+            <div class="uk-card uk-card-default no-break">
+                <div class="uk-card-body">
                     <h4>Member of <a href="https://algarvetoastmastersclub.com/">Algarve Toastmasters Club</a></h4>
                     <p class="uk-text-meta">October 2022 &mdash; December 2024</p>
                 </div>
