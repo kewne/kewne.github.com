@@ -2,9 +2,10 @@ author:
   twitter: joaorcabrita
 collections:
   prof_exp:
-    output: false
   patterns:
     output: true
+  talks:
+    sort: date
 
 defaults:
   - scope:
