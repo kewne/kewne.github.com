@@ -24,17 +24,13 @@ layout: default
     <div class="uk-section uk-section-default">
         <h1 id="professional_exp">Professional Experience</h1>
         <div>
-            {% assign xps = site.prof_exp | sort: 'date' | reverse %}
+            {% assign xps = site.prof_exp | reverse %}
             {% for exp in xps %}
-            {% assign rem = forloop.index | modulo: 2 %}
-            {% if exp.end_date %}
-            {% assign end_date = exp.end_date | date: "%B %Y" %}
-            {% endif %}
             <div
-                class="uk-tile {% if rem == 1%} uk-tile-primary {% else %} uk-tile-secondary {% endif %} uk-preserve-color uk-padding uk-animation-fade">
+                class="uk-tile {% cycle "uk-tile-primary", "uk-tile-secondary" %} uk-preserve-color uk-padding uk-animation-fade">
                 <div class="uk-light">
                     <h1>{{ exp.title}}</h1>
-                    <p>{{ exp.date | date: "%B %Y" }} &mdash; {{ end_date | default: 'Current' }}
+                    <p>{{ exp.date | date: "%B %Y" }} &mdash; {% if exp.end_date %}{{ exp.end_date | date: "%B %Y" }}{% else %}Current{% endif %}
                     </p>
                 </div>
                 <div class="uk-card uk-card-default">
