@@ -16,6 +16,11 @@ defaults:
       layout: 'default'
       categories:
         - pattern
+  - scope:
+      path: ""
+      type: 'prof_exp'
+    values:
+      recent: false
 encoding: UTF-8
 exclude:
 - .idea

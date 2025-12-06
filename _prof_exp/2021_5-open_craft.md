@@ -2,6 +2,7 @@
 title: OpenCraft (Trial)
 date: 2021-05-01
 end_date: 2021-06-30
+recent: true
 tech:
 - name: Python
   usage: Heavy
