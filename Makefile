@@ -6,4 +6,4 @@ setup-dev-env:
 	bundle install
 
 run:
-	bundle exec jekyll serve --livereload --drafts
+	bundle exec jekyll serve --watch --livereload --drafts

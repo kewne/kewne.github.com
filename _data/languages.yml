@@ -1,0 +1,12 @@
+- name: Portuguese
+  level: native
+- name: English
+  level: fluent
+  certifications:
+  - name: Business English Certificate Higher
+    issuer: University of Cambridge
+    grade: Graded B (Council of Europe Level C1)
+- name: Japanese
+  level: basic
+  certifications:
+  - name: 'JLPT N5'

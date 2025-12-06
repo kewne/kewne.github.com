@@ -67,9 +67,31 @@ layout: default
     </div>
     <div class="uk-section uk-section-default">
         <h1 id="academic_exp">Academic Experience</h1>
-        <div class="uk-tile uk-tile-primary">
-            <h2>Languages</h2>
-            <div>{% include academic_exp/language.html %}</div>
+        <div class="uk-tile uk-tile-primary uk-preserve-color">
+            <h2 class="uk-light">Languages</h2>
+            {% for language in site.data.languages %}
+            {% assign rem = forloop.index | modulo: 2 %}
+            <div class="uk-tile {% if rem == 1 %} uk-tile-default {% else %} uk-tile-muted {% endif %} uk-padding-small">
+                <div class="uk-flex uk-flex-middle">
+                    <span class="uk-text-lead">{{ language.name }}</span>
+                    <span class="uk-label uk-margin-left">{{ language.level }}</span>
+                </div>
+                {% if language.certifications %}
+                <div class="uk-margin-top uk-padding-left">
+                    <ul class="uk-list">
+                        {% for cert in language.certifications %}
+                        <li>
+                            <h5 class="uk-margin-remove-bottom">{{cert.name}} {%- if cert.issuer %} ({{ cert.issuer }}){% endif %}</h5>
+                            {%- if cert.grade %}
+                            <p class="uk-text-meta uk-margin-remove-top">{{cert.grade}}</p>
+                            {% endif -%}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
         </div>
         <div class="uk-tile uk-tile-secondary">
             <h2>Technical Certifications</h2>
