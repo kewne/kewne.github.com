@@ -20,6 +20,7 @@ encoding: UTF-8
 exclude:
 - .idea
 - vendor
+- .ruby-lsp
 
 plugins:
 - jekyll-seo-tag
