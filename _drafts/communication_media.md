@@ -5,7 +5,6 @@ tags:
 - agile
 - collaboration
 ---
-## Synchronous meetings are (mostly) a waste of time
 
 Synchronous meetings are basically anything that requires your nearly undivided attention, like:
 

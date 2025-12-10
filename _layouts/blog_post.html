@@ -3,21 +3,25 @@ layout: default
 ---
 <article class="uk-article" itemscope itemtype="http://schema.org/BlogPosting">
     <h1 class="uk-article-title" itemprop="name">{{ page.title }}</h1>
-    <span class="uk-article-meta">written by <span itemprop="author">João Cabrita</span> on <span itemprop="datePublished">{{ page.date | date_to_long_string }}</span></span>
+    <h2 class="uk-article-meta">written by <span itemprop="author">João Cabrita</span> on <span
+            itemprop="datePublished">{{ page.date | date_to_long_string }}</span>
+    </h2>
 
-    <div class="text-block" itemprop="articleBody">{{ content }}</div>
+    <div class="uk-width-large" itemprop="articleBody">{{ content }}</div>
 
     <hr />
     <div>
         <h4 id="share_this">Share this</h4>
-            <span>
-                <a id="twitter-share-button" href="https://twitter.com/intent/tweet?url={{site.url}}{{ page.url }}&via=joaorcabrita&text={{page.title}}"><!--
-                 --><img src="/images/bird_blue_32.png" alt="Tweet"/><!--
+        <span>
+            <a id="twitter-share-button"
+                href="https://twitter.com/intent/tweet?url={{site.url}}{{ page.url }}&via=joaorcabrita&text={{page.title}}"><!--
+                 --><img src="/images/bird_blue_32.png" alt="Tweet" /><!--
              --></a>
-                <a id="linkedin-share-button" href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source=João Cabrita"><!--
-                 --><img src="/images/InBug-30px-R.png" alt="Share on LinkedIn"/><!--
+            <a id="linkedin-share-button"
+                href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source=João Cabrita"><!--
+                 --><img src="/images/InBug-30px-R.png" alt="Share on LinkedIn" /><!--
              --></a>
-            </span>
+        </span>
     </div>
 </article>
 <hr />

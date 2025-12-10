@@ -16,15 +16,13 @@
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage">
-    <div>
+    <div class="uk-container">
         <div class="print-hidden" itemscope itemtype="http://schema.org/WPHeader">
             {% include header.html %}
         </div>
-        <div id="main" class="uk-container">
-            {{ content }}
-        </div>
+        <div id="main">{{ content }}</div>
         <hr />
-        <div id="footer" class="uk-container print-hidden" itemscope itemtype="http://schema.org/WPFooter">
+        <div id="footer" class="print-hidden" itemscope itemtype="http://schema.org/WPFooter">
             <p class="uk-text-small uk-text-muted">Who dares, wins.
             <p>
         </div>
