@@ -40,10 +40,7 @@ social:
 url: http://kewne.github.io
 
 title: João Cabrita's Home Page
-
-twitter:
-  username: joaorcabrita
-
-
+description: |
+  This is my Home Page, where I write about software development.
 whitelist:
   - jekyll-seo-tag
