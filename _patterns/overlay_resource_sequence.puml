@@ -38,9 +38,12 @@ note left
     ],
   },
   "_links": {
-<color:red>    "historic-price": {
-<color:red>      "href": "https://example.com/price-history?product=super-widget&product=widget-3000&at=2023-04-22T15:46:00Z"
-<color:red>    }
+<color:red>    "overlaid-by": [
+<color:red>      {
+<color:red>        "href": "https://example.com/price-history?product=super-widget&product=widget-3000&at=2023-04-22T15:46:00Z",
+<color:red>        "name": "price-history",
+<color:red>      }
+<color:red>    ]
   }
 }
 endnote
@@ -57,7 +60,7 @@ note left
           "currency": "EUR"
         },
         "_links": {
-<color:red>          "product": {
+<color:red>          "overlays": {
 <color:red>            "href": "https://example.com/super-widget"
 <color:red>          }
         }
