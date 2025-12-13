@@ -21,8 +21,5 @@ note left
 endnote
 
 client -> api++: GET *order-history
-note across
-Accesses order history without having to access user first
-endnote
 return 200 OK
 @enduml

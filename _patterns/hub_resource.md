@@ -13,10 +13,7 @@ A [Root Resource][root-resource-pattern] is often implemented as a Hub Resource.
 
 # Sequence Diagram
 
-![Sequence Diagram for the hub resource pattern](hub_resource_sequence/hub_resource.svg)
-
-# Example client code
-
+![Sequence Diagram for the hub resource pattern](hub_resource.svg)
 
 # Properties
 

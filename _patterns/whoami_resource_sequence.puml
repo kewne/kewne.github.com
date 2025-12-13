@@ -1,0 +1,25 @@
+@startuml whoami_resource
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+
+alt valid credentials
+  client -> api++: GET /whoami
+  return 200 OK
+  note left
+  {
+    "id": "user-123",
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+  endnote
+
+else invalid or missing credentials
+  client -> api++: GET /whoami
+  return 401 Unauthorized
+end
+
+@enduml

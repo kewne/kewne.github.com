@@ -10,10 +10,6 @@ A resource has a property that can be changed by the client but must have a valu
 
 ![Sequence Diagram for the selector resource pattern](selector_resource_sequence/selector_resource.svg)
 
-# Example client code
-
-TBD
-
 # Properties
 
 ## Strengths
