@@ -7,9 +7,20 @@
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
 	// "features": {},
+	"features": {
+		"./features/plantuml": {
+			"version": "latest"
+		}
+	},
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
 	// "forwardPorts": [],
+
+	// Mounts to persist data between container rebuilds
+	"mounts": [
+		"source=kewne-bundle-cache,target=${containerWorkspaceFolder}/vendor/bundle,type=volume",
+		"source=kewne-site-cache,target=${containerWorkspaceFolder}/_site,type=volume"
+	],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	"postCreateCommand": {

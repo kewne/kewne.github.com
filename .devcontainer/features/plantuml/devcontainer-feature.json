@@ -1,0 +1,19 @@
+{
+    "id": "plantuml",
+    "version": "1.0.0",
+    "name": "PlantUML",
+    "description": "Installs PlantUML with Java runtime",
+    "dependsOn": {
+        "ghcr.io/devcontainers/features/java:1": {}
+    },
+    "options": {
+        "version": {
+            "type": "string",
+            "proposals": [
+                "latest"
+            ],
+            "default": "latest",
+            "description": "Select the version of PlantUML to install."
+        }
+    }
+}
