@@ -5,7 +5,7 @@ tags:
 - anti-pattern
 - collaboration
 ---
-Today I'm writing about a particular anti-pattern I've seen teams falling into, which I call the "one person team".
+Today I'm writing about a particular anti-pattern I've seen teams falling into, which I'll call the "one person team".
 
 This happens when, despite there being an official team, all of the teammembers are effectively working on separate things, with very little colaboration happening.
 
