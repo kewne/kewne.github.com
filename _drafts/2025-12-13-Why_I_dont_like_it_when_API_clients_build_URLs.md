@@ -47,7 +47,7 @@ An example of this would be changing a user's friend list from `/users/{user-id}
 ## Form parameters
 
 The second class of parameters is parameters that the client generates itself, either because a user filled them in a UI (hence the name "form") or because the client has a built-in heuristic for generating them.
-This class of parameters differs from the previous one because, when a client provides incorrect form parameters, the API *should* produce a response that describes which parts are wrong and why they're so, so that the client may display that information to a user that can correct it.
+This class differs from the previous one because, when a client provides incorrect form parameters, the API *should* produce a response that describes which parts are wrong and why they're so, so that the client may display that information to a user that can correct it.
 By contrast, **providing incorrect reference parameters is a programming error** which *should* only show a generic message to the user.
 
 This becomes problematic because, in many cases, reference parameters may also be form parameters when they reference an API resource but are also selected by the user.
@@ -68,3 +68,10 @@ This mix of concerns means that clients need to handle errors differently depend
 
 * if the invalid parameter is a reference parameter that comes from user input, the client must show an error message to the user;
 * if there is a validation error for a reference parameter that doesn't come from user input, the client must raise an error.
+
+# How can you build an API that doesn't burden clients with URL building?
+
+Now that I've made my case that clients building URLs is less than ideal, what's the alternative?
+
+Simply put, it's for the API to return the built URLs itself.
+This is usually done using a [Hypermedia-enabled content type](https://en.wikipedia.org/wiki/Hypermedia) like [JSON-HAL](https://stateless.group/hal_specification.html), [JSON-LD](https://json-ld.org/) or [Collection+JSON](https://github.com/collection-json/spec), among others.
