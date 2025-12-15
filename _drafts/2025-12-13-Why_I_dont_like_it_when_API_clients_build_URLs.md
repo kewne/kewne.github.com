@@ -54,7 +54,7 @@ This becomes problematic because, in many cases, reference parameters may also b
 What this means is that APIs *must* always respond in a way that allows clients to handle the response as if the invalid parameter was provided by the user.
 
 As a concrete example, let's consider the case where 
-{% highlight http %}
+{% highlight json %}
 {
     "validation_errors": {
         "user_id": [
@@ -75,3 +75,33 @@ Now that I've made my case that clients building URLs is less than ideal, what's
 
 Simply put, it's for the API to return the built URLs itself.
 This is usually done using a [Hypermedia-enabled content type](https://en.wikipedia.org/wiki/Hypermedia) like [JSON-HAL](https://stateless.group/hal_specification.html), [JSON-LD](https://json-ld.org/) or [Collection+JSON](https://github.com/collection-json/spec), among others.
+
+For example, this is what a JSON-HAL response to `GET /users/123` could look like:
+
+{% highlight json mark_lines="9 10 11 12 13" %}
+{
+  "id": 123,
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "_links": {
+    "self": {
+      "href": "https://example.com/users/123"
+    },
+    "related": {
+      "href": "https://example.com/users/123/friends",
+      "name": "friends",
+      "title": "Friends"
+    }
+  }
+}
+{% endhighlight %}
+
+Notice how the `href` in the `related` rel becomes an opaque token that clients can just access and the server can change at will.
+This solves the issue of clients having to replace reference parameters into URLs.
+
+What about form parameters?
+
+My solution for these is a bit contentious but is based on moving the parameters out of the URL and into the request body.
+Since `GET` requests can't have a request body, this necessitates changing them to `POST`, with the API replying with a `303 See Other` status that redirects to the correct URL.
+
+In other words, the API exposes a "form resource" that redirects to the actual result of the query.
