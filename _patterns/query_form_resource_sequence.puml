@@ -1,0 +1,76 @@
+@startuml query_form_resource
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+
+alt validation successful
+  client -> api++: POST /search-form
+  note right
+  {
+  "filters": {
+      "category": "electronics",
+      "price_range": {
+      "min": 100,
+      "max": 500
+      },
+      "brand": "acme"
+  },
+  "sort": "price_desc",
+  "limit": 20
+  }
+  endnote
+  return 303 See Other
+  note left
+  Location: /search?category=electronics&price_min=100&price_max=500&brand=acme&sort=price_desc&limit=20
+  endnote
+  
+  client -> api++: GET /search?category=electronics&...
+  return 200 OK
+  note left
+  {
+    "results": [...],
+    "total": 42,
+    "_links": {
+      "next": {...},
+      "self": {...}
+    }
+  }
+  endnote
+
+else validation failed
+  client -> api++: POST /search-form
+  note right
+  {
+  "filters": {
+      "category": "electronics",
+      "price_range": {
+      "min": -20,
+      "max": 500
+      },
+      "brand": "acme"
+  },
+  "sort": "price_desc",
+  "limit": 200
+  }
+  endnote
+  return 400 Bad Request
+  note left
+  {
+    "errors": [
+      {
+        "field": "price_range.min",
+        "message": "Minimum price must be positive"
+      },
+      {
+        "field": "limit", 
+        "message": "Limit cannot exceed 100"
+      }
+    ]
+  }
+  endnote
+end
+
+@enduml
