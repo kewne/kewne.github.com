@@ -1,5 +1,6 @@
 source 'http://rubygems.org'
-gem 'github-pages'
+ruby file: ".ruby-version"
+
 gem 'wdm'
 gem 'jekyll-seo-tag'
 gem 'jekyll-plantuml'
