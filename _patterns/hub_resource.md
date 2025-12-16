@@ -13,7 +13,31 @@ A [Root Resource][root-resource-pattern] is often implemented as a Hub Resource.
 
 # Sequence Diagram
 
-![Sequence Diagram for the hub resource pattern](hub_resource.svg)
+{% plantuml %}
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+client -> api++: GET /
+return 200 OK
+note left
+{
+  "_links": {
+    "user": {
+      "href": "https://example.com/users/123456"
+    },
+    "order-history": {
+      "href": "https://example.com/orders?user_id=123456"
+    }
+  }
+}
+endnote
+
+client -> api++: GET *order-history
+return 200 OK
+{% endplantuml %}
 
 # Properties
 

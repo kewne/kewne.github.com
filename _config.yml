@@ -29,6 +29,7 @@ exclude:
 
 plugins:
 - jekyll-seo-tag
+- jekyll-plantuml
 
 safe: true
 social:
@@ -44,3 +45,4 @@ description: |
   This is my Home Page, where I write about software development.
 whitelist:
   - jekyll-seo-tag
+  - jekyll-plantuml

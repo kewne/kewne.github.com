@@ -8,7 +8,14 @@ A resource has a property that can be changed by the client but must have a valu
 
 # Sequence Diagram
 
-![Sequence Diagram for the selector resource pattern](selector_resource_sequence/selector_resource.svg)
+{% plantuml %}
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+{% endplantuml %}
 
 # Properties
 

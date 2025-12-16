@@ -12,7 +12,33 @@ In situations where a client cannot introspect its own credentials, as in the ca
 
 # Sequence Diagram
 
-![Sequence Diagram for the WhoAmI resource pattern](whoami_resource.svg)
+{% plantuml %}
+@startuml
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+
+alt valid credentials
+  client -> api++: GET /whoami
+  return 200 OK
+  note left
+  { 
+    "id": "user-123",
+    "name": "John Doe",
+    "email": "john.doe@example.com"
+  }
+  endnote
+
+else invalid or missing credentials
+  client -> api++: GET /whoami
+  return 401 Unauthorized
+end
+
+@enduml
+{% endplantuml %}
 
 # Example client code
 

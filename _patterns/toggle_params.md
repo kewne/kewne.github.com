@@ -11,7 +11,67 @@ Toggle Parameters allow clients to opt-in to including expensive or optional dat
 
 # Sequence Diagram
 
-![Sequence Diagram for toggle parameters pattern](toggle_params.svg)
+{% plantuml %}
+@startuml
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+== Basic Request ==
+
+client -> api++: GET /users/123
+return 200 OK
+note left
+{
+  "id": "123",
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "created_at": "2023-01-15T10:30:00Z",
+  "_links": {
+    "self": {
+      "href": "/api/users/123"
+    },
+    "orders": {
+      "href": "/api/users/123/orders"
+    }
+  }
+}
+endnote
+
+== Request with Toggle Parameter ==
+
+client -> api++: GET /users/123?include_order_stats=true
+return 200 OK
+note left
+{
+  "id": "123", 
+  "name": "John Doe",
+  "email": "john.doe@example.com",
+  "created_at": "2023-01-15T10:30:00Z",
+  "order_stats": {
+    "total_orders": 42,
+    "total_spent": {
+      "amount": 1299.50,
+      "currency": "USD"
+    },
+    "average_order_value": 30.94,
+    "last_order_date": "2024-12-01T14:22:00Z"
+  },
+  "_links": {
+    "self": {
+      "href": "/api/users/123"
+    },
+    "orders": {
+      "href": "/api/users/123/orders"
+    }
+  }
+}
+endnote
+
+@enduml
+{% endplantuml %}
 
 # Properties
 

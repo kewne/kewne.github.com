@@ -9,7 +9,89 @@ for this reason, you want to make it optional to get, or defer fetching it to ac
 
 # Sequence Diagram
 
-![Sequence Diagram for the overlay resource pattern](overlay_resource.svg)
+{% plantuml %}
+!theme mars
+skinparam NoteFontName Courier
+
+actor Client as client
+boundary API as api
+
+client -> api++: GET /products
+return 200 OK
+note left
+{
+  "_embedded": {
+    "items": [
+      {
+        "name": "Super Widget",
+        "price": {
+          "amount": 30,
+          "currency": "EUR"
+        },
+        "_links": {
+          "self": {
+            "href": "https://example.com/super-widget"
+          }
+        }
+      },
+      {
+        "name": "Widget 3000",
+        "price": {
+          "amount": 15,
+          "currency": "EUR"
+        },
+        "_links": {
+          self: {
+            "href": "https://example.com/widget-3000"
+          }
+        }
+      }
+    ],
+  },
+  "_links": {
+    "overlaid-by": [
+      {
+        "href": "https://example.com/price-history?product=super-widget&product=widget-3000&at=2023-04-22T15:46:00Z",
+        "name": "price-history",
+      }
+    ]
+  }
+}
+endnote
+
+client -> api++: GET *historic-price
+return 200 OK
+note left
+{
+  "_embedded": {
+    "items": [
+      {
+        "price": {
+          "amount": 35,
+          "currency": "EUR"
+        },
+        "_links": {
+          "overlays": {
+            "href": "https://example.com/super-widget"
+          }
+        }
+      },
+      {
+        "price": {
+          "amount": 12,
+          "currency": "EUR"
+        },
+        "_links": {
+          "product": {
+            "href": "https://example.com/widget-3000"
+          }
+        }
+      }
+    ]
+  }
+}
+endnote
+{% endplantuml %}
 
 # Example client code
 
