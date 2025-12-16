@@ -13,7 +13,7 @@ defaults:
       path: ""
       type: 'patterns'
     values:
-      layout: 'default'
+      layout: 'pattern'
       categories:
         - pattern
   - scope:

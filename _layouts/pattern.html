@@ -1,0 +1,19 @@
+---
+layout: default
+---
+<article class="uk-article" itemscope itemtype="http://schema.org/BlogPosting">
+    <h1 class="uk-article-title" itemprop="name">{{ page.title }}</h1>
+
+    <div class="uk-width-xlarge uk-text-justify" itemprop="articleBody">{{ content }}</div>
+</article>
+<hr />
+<div>
+    <h4 id="share_this">Share this</h4>
+    <span>
+        <a id="linkedin-share-button"
+            href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source=João Cabrita"><!--
+                --><img src="/images/InBug-30px-R.png" alt="Share on LinkedIn" /><!--
+            --></a>
+    </span>
+</div>
+{% include comments.html %}
