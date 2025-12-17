@@ -105,3 +105,9 @@ My solution for these is a bit contentious but is based on moving the parameters
 Since `GET` requests can't have a request body, this necessitates changing them to `POST`, with the API replying with a `303 See Other` status that redirects to the correct URL.
 
 In other words, the API exposes a "form resource" that redirects to the actual result of the query.
+This way, any validation errors relate to user provided values in the request body.
+
+# Conclusion
+
+In this article, I've tried to explain why I think APIs shouldn't force client to build URLs.
+Additionally, I've described a few strategies for avoiding. While these don't cover all the cases you're likely to find while designing an API, I've started documenting them in my [Patterns Catalog]({% link patterns.html %}).
