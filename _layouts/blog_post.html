@@ -8,21 +8,14 @@ layout: default
     </h2>
 
     <div class="uk-width-xlarge uk-text-justify" itemprop="articleBody">{{ content }}</div>
-
-    <hr />
-    <div>
-        <h4 id="share_this">Share this</h4>
-        <span>
-            <a id="twitter-share-button"
-                href="https://twitter.com/intent/tweet?url={{site.url}}{{ page.url }}&via=joaorcabrita&text={{page.title}}"><!--
-                 --><img src="/images/bird_blue_32.png" alt="Tweet" /><!--
-             --></a>
-            <a id="linkedin-share-button"
-                href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source=João Cabrita"><!--
-                 --><img src="/images/InBug-30px-R.png" alt="Share on LinkedIn" /><!--
-             --></a>
-        </span>
-    </div>
+  
 </article>
 <hr />
+<div>
+    <h4>Share this</h4>
+    <span>
+        <a aria-label="Share on LinkedIn" uk-icon="icon: linkedin" 
+            href="https://www.linkedin.com/sharing/share-offsite/?url={{site.url}}{{page.url}}" target="_blank"></a>
+    </span>
+</div>
 {% include comments.html %}

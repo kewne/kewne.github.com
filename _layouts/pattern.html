@@ -8,12 +8,10 @@ layout: default
 </article>
 <hr />
 <div>
-    <h4 id="share_this">Share this</h4>
+    <h4>Share this</h4>
     <span>
-        <a id="linkedin-share-button"
-            href="http://www.linkedin.com/shareArticle?mini=true&url={{site.url}}{{page.url}}&title={{page.title}}&source=João Cabrita"><!--
-                --><img src="/images/InBug-30px-R.png" alt="Share on LinkedIn" /><!--
-            --></a>
+        <a aria-label="Share on LinkedIn" uk-icon="icon: linkedin" 
+            href="https://www.linkedin.com/sharing/share-offsite/?url={{site.url}}{{page.url}}" target="_blank"></a>
     </span>
 </div>
 {% include comments.html %}
