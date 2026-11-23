@@ -17,6 +17,12 @@
     #cv-photo {
         height: 250px;
     }
+
+    [uk-scrollspy],
+    [uk-scrollspy] * {
+        opacity: 1 !important;
+        animation: none !important;
+    }
 }
 
 @media not print {
